@@ -132,7 +132,7 @@ a {
 /*------------------------------------------*/
 
 .btn-theme {
-	background-color: #00aeef;
+	background-color: #15835a;
 	color: #fff;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -193,7 +193,7 @@ a {
 			content: "";
 			height: 2px;
 			width: 200px;
-			background: #00aeef;
+			background: #15835a;
 			margin: 15px auto;
 			position: relative;
 		}
@@ -268,7 +268,7 @@ a {
 
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a.selected-nav {
-	color: #00aeef;
+	color: #15835a;
 	background-color: transparent;
 }
 
@@ -426,10 +426,10 @@ textarea {
 
 .form-control:focus {
 	background-color: #f0f0f0;
-	border-color: #00aeef;
+	border-color: #15835a;
 	outline: 0;
-	-webkit-box-shadow: inset 0 1px 1px #00aeef, 0 0 3px #00aeef;
-	box-shadow: inset 0 1px 1px #00aeef, 0 0 3px #00aeef;
+	-webkit-box-shadow: inset 0 1px 1px #15835a, 0 0 3px #15835a;
+	box-shadow: inset 0 1px 1px #15835a, 0 0 3px #15835a;
 }
 
 /*------------------------------------------*/
@@ -492,13 +492,13 @@ textarea {
 	.nav-tabs > li.active > a,
 	.nav-tabs > li.active > a:hover,
 	.nav-tabs > li.active > a:focus {
-		color: #00aeef;
+		color: #15835a;
 		border: none;
 		padding: 0;
 	}
 
 	.nav-tabs > li > a:hover {
-		color: #00aeef;
+		color: #15835a;
 		border: none;
 	}
 
@@ -587,7 +587,7 @@ textarea {
 	}
 
 		.panel-title > a:hover {
-			color: #00aeef;
+			color: #15835a;
 		}
 
 	/*------------------------------------------*/
@@ -595,7 +595,7 @@ textarea {
 /*------------------------------------------*/
 
 	.panel-title i {
-		color: #00aeef;
+		color: #15835a;
 		font-size: 28px;
 		margin-right: 10px;
 	}
@@ -654,7 +654,7 @@ textarea {
 				content: "";
 				height: 2px;
 				width: 100px;
-				background: #00aeef;
+				background: #15835a;
 				margin: 15px auto;
 				position: relative;
 			}
@@ -800,7 +800,7 @@ textarea {
 }
 
 	.icon-box i {
-		color: #00aeef;
+		color: #15835a;
 		font-size: 60px;
 		margin-top: 10px;
 	}
@@ -866,7 +866,7 @@ textarea {
 	}
 
 	.timeline-year span {
-		background-color: #00aeef;
+		background-color: #15835a;
 		color: #fff;
 		font-size: 20px;
 		font-family: 'Quicksand', sans-serif;
@@ -956,8 +956,8 @@ textarea {
 	}
 
 .timeline-item:hover.timeline-item:before {
-	background-color: #00aeef;
-	border-color: #00aeef;
+	background-color: #15835a;
+	border-color: #15835a;
 }
 
 .timeline-item:hover .timeline-item-content.pull-right:before {
@@ -1098,7 +1098,7 @@ textarea {
 
 #gallery-filter .btn-group > .btn:hover {
 	color: #fff;
-	background-color: #00aeef;
+	background-color: #15835a;
 }
 
 /*------------------------------------------*/
@@ -1108,7 +1108,7 @@ textarea {
 #gallery-filter .btn-group > .btn.active,
 #gallery-filter .btn-group > .btn.focus {
 	color: #222;
-	background-color: #00aeef;
+	background-color: #15835a;
 	box-shadow: 0 0 0 0;
 	cursor: default;
 }
@@ -1262,7 +1262,7 @@ textarea {
 
 .team-img-meta h6 {
 	font-size: 14px;
-	color: #00aeef;
+	color: #15835a;
 	text-transform: uppercase;
 	font-weight: 400;
 	margin-bottom: 10px;
@@ -1511,7 +1511,7 @@ textarea {
 /*------------------------------------------*/
 
 .pricing-table.highlight {
-	background-color: #00aeef;
+	background-color: #15835a;
 	border-color: #d9a701;
 }
 
@@ -1600,7 +1600,7 @@ textarea {
 	}
 
 	#testimonials .clients-counter {
-		color: #00aeef;
+		color: #15835a;
 		font-size: 30px;
 		font-weight: 700;
 	}
@@ -1731,7 +1731,7 @@ textarea {
 }
 
 	.blog-post-info a {
-		color: #00aeef;
+		color: #15835a;
 	}
 
 /*------------------------------------------*/
@@ -1843,7 +1843,7 @@ textarea {
 /*------------------------------------------*/
 
 	.contact-info .fa {
-		color: #00aeef;
+		color: #15835a;
 		font-size: 60px;
 		line-height: 60px;
 		margin-bottom: 10px;
@@ -1868,12 +1868,12 @@ textarea {
 	}
 
 	.contact-info a {
-		color: #00aeef;
+		color: #15835a;
 		font-weight: 700;
 	}
 
 		.contact-info a:hover {
-			color: #00aeef;
+			color: #15835a;
 		}
 
 
@@ -1986,8 +1986,8 @@ textarea {
 
 #newsletter form input[type="submit"] {
 	width: 25%;
-	background-color: #00aeef;
-	border: 1px solid #00aeef;
+	background-color: #15835a;
+	border: 1px solid #15835a;
 	color: #fff;
 	font-size: 16px;
 	font-weight: 900;
@@ -2015,7 +2015,7 @@ textarea {
 }
 
 	#footer_copyright p span {
-		color: #00aeef;
+		color: #15835a;
 		font-size: 15px;
 		font-weight: 800;
 	}
@@ -2245,7 +2245,7 @@ nav a#pull {
 	}
 
 	#form_response .btn-theme {
-		background-color: #00aeef;
+		background-color: #15835a;
 		color: #333;
 		font-size: 14px;
 		text-transform: uppercase;
@@ -2259,6 +2259,6 @@ nav a#pull {
 	}
 
 		#form_response .btn-theme:hover {
-			background-color: #00aeef;
+			background-color: #15835a;
 			color: #fff;
 		}
