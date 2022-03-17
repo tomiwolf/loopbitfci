@@ -1,0 +1,4176 @@
+<!DOCTYPE html>
+<html lang="en" style class=" js no-touch">
+<!--<![endif]-->
+
+<head>
+	<style>
+		/*Template Name: xLander - Premium Flexible Landing Page TemplateTheme URL: http://themeforest.net/user/DSA79/Description: xLander - Premium Flexible Landing Page TemplateAuthor: DSA79Author URL: http://themeforest.net/user/DSA79Version: 1.0.0Website: www.dsathemes.comTags: responsive, premium template, html5 template, one page, landing page, business, corporate, project*/
+		/* ------------------------------------------ */
+		/*             TABLE OF CONTENTS/* ------------------------------------------ */
+		/*   01 - General & Basic Styles   */
+		/*   02 - Header & Navigation      */
+		/*   03 - Intro      			   */
+		/*   04 - About		      		   */
+		/*   05 - About-1	      		   */
+		/*   06 - Skills				   */
+		/*   07 - Services         		   */
+		/*   08 - Features            	   */
+		/*   09 - History				   */
+		/*   10 - Statistic banner         */
+		/*   11 - Portfolio        		   */
+		/*   12 - Team					   */
+		/*   13 - Pricing				   */
+		/*   14 - Clients		 	  	   */
+		/*   15 - Testimonials	      	   */
+		/*   16 - Blog		 	  	   	   */
+		/*   17 - Promo LIne	 	  	   */
+		/*   18 - Contact Info 	  	   	   */
+		/*   19 - Google Map 	  	   	   */
+		/*   20 - Footer		 	  	   */
+		/*   21 - Scroll to Top	 	  	   */
+		/*   22 - Contact Form Response    */
+		/* ==========================================================================   01. GENERAL & BASIC STYLES   ========================================================================== */
+		#content_wrapper {
+			overflow: hidden;
+		}
+
+		.animated {
+			visibility: hidden;
+		}
+
+		.visible {
+			visibility: visible;
+		}
+
+		/*------------------------------------------*/
+		/*	 Preload Animation /*------------------------------------------*/
+		.animationload {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: #262626;
+			z-index: 999999;
+		}
+
+		.loader {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -100px 0 0 -100px;
+			width: 200px;
+			height: 200px;
+			background-image: url(images/loader.gif);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 70px 70px;
+		}
+
+		/*------------------------------------------*/
+		/*	 Headers/*------------------------------------------*/
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+
+		/*------------------------------------------*/
+		/*	 Lists/*------------------------------------------*/
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		/*------------------------------------------*/
+		/*	 Link Setting/*------------------------------------------*/
+		a {
+			text-decoration: none;
+			-webkit-transition: all 250ms ease-in-out;
+			-moz-transition: all 250ms ease-in-out;
+			-o-transition: all 250ms ease-in-out;
+			-ms-transition: all 250ms ease-in-out;
+			transition: all 250ms ease-in-out;
+		}
+
+		a:hover {
+			color: #444;
+			text-decoration: none;
+		}
+
+		a:focus {
+			color: #f8f8f8;
+			outline: none;
+			border: none;
+			text-decoration: none;
+		}
+
+		/*------------------------------------------*/
+		/*	 Theme Button/*------------------------------------------*/
+		.btn-theme {
+			background-color: #00aeef;
+			color: #fff;
+			font-size: 14px;
+			text-transform: uppercase;
+			font-weight: 700;
+			padding: 10px 20px;
+			-webkit-transition: all 300ms ease-in-out;
+			-moz-transition: all 300ms ease-in-out;
+			-o-transition: all 300ms ease-in-out;
+			-ms-transition: all 300ms ease-in-out;
+			transition: all 300ms ease-in-out;
+		}
+
+		.btn-theme:hover {
+			background-color: #034EA2;
+			color: #fff;
+		}
+
+		/*------------------------------------------*/
+		/*	 Button Hover/Focus/*------------------------------------------*/
+		.btn:focus {
+			outline: none;
+		}
+
+		.btn:focus {
+			color: #f8f8f8;
+			text-decoration: none;
+		}
+
+		/*------------------------------------------*/
+		/*	 Section Titlebar/*------------------------------------------*/
+		.titlebar {
+			margin-bottom: 60px;
+			text-align: center;
+		}
+
+		.titlebar h3 {
+			color: #222;
+			font-size: 24px;
+			font-weight: 300;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+		}
+
+		.titlebar h2 {
+			color: #222;
+			font-size: 40px;
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+
+		.titlebar h2:after {
+			display: block;
+			content: "";
+			height: 2px;
+			width: 200px;
+			background: #00aeef;
+			margin: 15px auto;
+			position: relative;
+		}
+
+		/* ==========================================================================   02. HEADER & NAVIGATION   ========================================================================== */
+		/*------------------------------------------*/
+		/*	 Logo Image    /*------------------------------------------*/
+		.navbar-brand {
+			padding: 6px 15px;
+		}
+
+		/*------------------------------------------*/
+		/*	 Navigation Menu    /*------------------------------------------*/
+		.navbar {
+			margin-bottom: 0;
+			-webkit-border-radius: 0;
+			-moz-border-radius: 0;
+			border-radius: 0;
+			padding: 8px 0px;
+			-webkit-transition: all 350ms ease-in-out;
+			-moz-transition: all 350ms ease-in-out;
+			-o-transition: all 350ms ease-in-out;
+			-ms-transition: all 350ms ease-in-out;
+			transition: all 350ms ease-in-out;
+		}
+
+		.navbar-fixed-top {
+			background-color: rgba(255, 255, 255, 1);
+			border-bottom: none;
+		}
+
+		.navbar-nav>li>a {
+			color: #383838;
+			font-size: 14px;
+			line-height: 60px;
+			font-weight: 700;
+			text-transform: uppercase;
+			display: block;
+			padding: 0 15px;
+			-webkit-transition: all 100ms ease-in-out;
+			-moz-transition: all 100ms ease-in-out;
+			-o-transition: all 100ms ease-in-out;
+			-ms-transition: all 100ms ease-in-out;
+			transition: all 100ms ease-in-out;
+		}
+
+		/*------------------------------------------*/
+		/*	 Navbar Scroll   /*------------------------------------------*/
+		.scroll-fixed-navbar {
+			padding: 0;
+		}
+
+		.scroll-fixed-navbar.navbar-fixed-top {
+			background-color: #fff;
+			border-bottom: 1px solid #222;
+		}
+
+		/*------------------------------------------*/
+		/*	 Menu Hover/*------------------------------------------*/
+		.navbar-nav>li>a:hover,
+		.navbar-nav>li>a.selected-nav {
+			color: #00aeef;
+			background-color: transparent;
+		}
+
+		/*------------------------------------------*/
+		/*	 Responsive Menu    /*------------------------------------------*/
+		.navbar-toggle {
+			position: relative;
+			float: right;
+			background-color: transparent;
+			padding: 10px;
+			margin: 13px 30px 13px 0;
+			border: none;
+			color: #fff;
+			border: 2px solid #ddd;
+		}
+
+		.navbar-toggle .icon-bar {
+			background-color: #ddd;
+		}
+
+		/* ==========================================================================   03. INTRO   ========================================================================== */
+		#intro {
+			width: 100%;
+			/* background-image: url(../img/thumbs/intro_bkg_1.jpg); */
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			color: #fff;
+		}
+
+		/*------------------------------------------*/
+		/*	 Overlay Pattern /*------------------------------------------*/
+		.overlay {
+			/*	background-image: url(../img/thumbs/overlay.png);*/
+			background-color: rgba(0, 0, 0, 0.55);
+			background-repeat: repeat;
+			height: 100%;
+		}
+
+		/*------------------------------------------*/
+		/*	 INTRO CONTENT/*------------------------------------------*/
+		#intro_content {
+			padding-top: 210px;
+			padding-bottom: 160px;
+		}
+
+		/*------------------------------------------*/
+		/*	 INTRO TEXT/*------------------------------------------*/
+		#intro h1 {
+			font-size: 69px !important;
+			font-weight: 800;
+			line-height: 89px !important;
+			text-transform: uppercase;
+			margin-bottom: 15px;
+			letter-spacing: 1px;
+		}
+
+		#intro h2 {
+			font-size: 34px !important;
+			font-weight: 800;
+			line-height: 42px !important;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+
+		.intro_text p {
+			font-size: 18px;
+			font-weight: 300;
+			line-height: 28px;
+			margin-bottom: 12px;
+		}
+
+		/*------------------------------------------*/
+		/*	 INTRO BUTTONS/*------------------------------------------*/
+		.intro_buttons .btn-theme {
+			font-size: 16px;
+			font-weight: 700;
+			margin-right: 10px;
+			padding: 9px 18px;
+			text-transform: uppercase;
+			margin-top: 50px;
+		}
+
+		/*------------------------------------------*/
+		/*	 INTRO REGISTER FORM /*------------------------------------------*/
+		.form_register form {
+			background-color: rgba(20, 20, 20, 0.65);
+			border: 1px solid #333;
+			-webkit-border-radius: 8px;
+			-moz-border-radius: 8px;
+			border-radius: 8px;
+			padding: 30px 10px 40px;
+			margin: 0 40px;
+		}
+
+		.form_register h4 {
+			color: #fff;
+			font-size: 20px;
+			line-height: 30px;
+			font-weight: 700;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			margin-bottom: 15px;
+		}
+
+		.form_register p {
+			color: #fff;
+			line-height: 20px;
+			margin-bottom: 30px;
+			padding: 0 10px;
+		}
+
+		/*------------------------------------------*/
+		/*	  Register Form Input/*------------------------------------------*/
+		.form_register .form-control {
+			height: 44px;
+			margin-bottom: 20px;
+			border: 1px solid #ddd;
+			-webkit-border-radius: 0;
+			-moz-border-radius: 0;
+			border-radius: 0;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			background-color: #f0f0f0;
+			color: #262626;
+			-webkit-transition: all 300ms ease-in-out;
+			-moz-transition: all 300ms ease-in-out;
+			-o-transition: all 300ms ease-in-out;
+			-ms-transition: all 300ms ease-in-out;
+			transition: all 300ms ease-in-out;
+		}
+
+		.form-control:focus {
+			background-color: #f0f0f0;
+			border-color: #00aeef;
+			outline: 0;
+			-webkit-box-shadow: inset 0 1px 1px #00aeef, 0 0 3px #00aeef;
+			box-shadow: inset 0 1px 1px #00aeef, 0 0 3px #00aeef;
+		}
+
+		/*------------------------------------------*/
+		/*	   Register Form Error Message /*------------------------------------------*/
+		.error {
+			color: #fc0000;
+			font-size: 13px;
+			font-weight: 400;
+			margin-bottom: 20px;
+		}
+
+		/* ==========================================================================   04. ABOUT   ========================================================================== */
+		#about {
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+
+		/*------------------------------------------*/
+		/*	TABS HOLDER IMAGE/*------------------------------------------*/
+		#tabs-holder .img-responsive {
+			display: inline-block;
+		}
+
+		/*------------------------------------------*/
+		/*	TABS/*------------------------------------------*/
+		.nav-tabs {
+			border: none;
+		}
+
+		.nav-tabs>li>a {
+			color: #222;
+			font-size: 22px;
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 400;
+			text-transform: uppercase;
+			padding: 0;
+			border: none;
+		}
+
+		.nav-tabs>li:first-child {
+			border-right: 1px solid #999;
+			padding-right: 20px;
+		}
+
+		.nav-tabs>li:last-child {
+			padding-left: 20px;
+		}
+
+		.nav-tabs>li.active>a,
+		.nav-tabs>li.active>a:hover,
+		.nav-tabs>li.active>a:focus {
+			color: #00aeef;
+			border: none;
+			padding: 0;
+		}
+
+		.nav-tabs>li>a:hover {
+			color: #00aeef;
+			border: none;
+		}
+
+		/*------------------------------------------*/
+		/*	Tab Description/*------------------------------------------*/
+		.tab-content>.tab-pane {
+			padding: 25px 0;
+			border: none;
+			border: none;
+		}
+
+		.tab-content>.tab-pane p {
+			font-size: 16px;
+			line-height: 28px;
+			font-weight: 300;
+		}
+
+		.tab-content a {
+			margin-top: 20px;
+			margin-right: 10px;
+		}
+
+		/* ==========================================================================   05. ABOUT-1   ========================================================================== */
+		#about-1 {
+			background-color: #f5f5f5;
+			border-top: 1px solid #eee;
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+
+		/*------------------------------------------*/
+		/*	ACCORDION HOLDER IMAGE/*------------------------------------------*/
+		#accordion-holder .img-responsive {
+			display: inline-block;
+		}
+
+		/*------------------------------------------*/
+		/*	ACCORDION/*------------------------------------------*/
+		.panel-group .panel {
+			margin-bottom: 10px;
+			background: none;
+			border: none;
+			border-radius: 0;
+			-webkit-border-radius: 0;
+			-moz-border-radius: 0;
+			border-radius: 0;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+
+		/*------------------------------------------*/
+		/*	Panel Title/*------------------------------------------*/
+		.panel-heading {
+			padding: 0;
+			background: none !important;
+			border: 0 !important;
+		}
+
+		.panel-title {
+			color: #222;
+			font-size: 20px;
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 400;
+			text-transform: uppercase;
+			border-bottom: 1px solid #ccc;
+			text-transform: uppercase;
+		}
+
+		.panel-title>a {
+			display: block;
+			color: #222;
+			padding: 12px 0;
+		}
+
+		.panel-title>a:hover {
+			color: #00aeef;
+		}
+
+		/*------------------------------------------*/
+		/*	Panel Title Icon/*------------------------------------------*/
+		.panel-title i {
+			color: #00aeef;
+			font-size: 28px;
+			margin-right: 10px;
+		}
+
+		/*------------------------------------------*/
+		/*	Panel Content /*------------------------------------------*/
+		.panel-body {
+			color: #444;
+			font-size: 16px;
+			line-height: 28px;
+			font-weight: 300;
+		}
+
+		.panel-default>.panel-heading+.panel-collapse .panel-body {
+			border: 0
+		}
+
+		.panel-default>.panel-heading+.panel-collapse {
+			border: none;
+			border-top: none;
+		}
+
+		/* ==========================================================================   06. SKILLS   ========================================================================== */
+		#skills {
+			background-image: url(images/skills.jpg);
+			background-attachment: fixed !important;
+			background-repeat: no-repeat;
+			background-position: bottom center;
+			background-size: cover;
+			padding-top: 80px;
+			padding-bottom: 80px;
+			color: #fff;
+		}
+
+		/*------------------------------------------*/
+		/*	 SKILLS TITLEBAR/*------------------------------------------*/
+		#skills .titlebar {
+			margin-bottom: 30px;
+		}
+
+		#skills .titlebar h2 {
+			color: #fff;
+		}
+
+		#skills .titlebar h2:after {
+			display: block;
+			content: "";
+			height: 2px;
+			width: 100px;
+			background: #00aeef;
+			margin: 15px auto;
+			position: relative;
+		}
+
+		/*------------------------------------------*/
+		/*	 Circle Progress Bars/*------------------------------------------*/
+		.chart {
+			position: relative;
+			width: 130px;
+			height: 130px;
+			margin: 0 auto;
+		}
+
+		.chart canvas {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.chart span {
+			color: #a9a9a9;
+			font-size: 40px;
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 800;
+			line-height: 130px;
+			display: inline-block;
+		}
+
+		.chart span:after {
+			content: '%';
+			margin-left: 0;
+			font-size: 40px;
+		}
+
+		#skills h4 {
+			font-size: 24px;
+			font-weight: 700;
+			margin-top: 25px;
+		}
+
+		/* ==========================================================================   07. SERVICES   ========================================================================== */
+		#services {
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+
+		/*------------------------------------------*/
+		/*	  SERVICE IMAGE/*------------------------------------------*/
+		#services_image .img-responsive {
+			display: inline-block;
+			margin-bottom: 80px;
+		}
+
+		/*------------------------------------------*/
+		/*	  SERVICE BOX/*------------------------------------------*/
+		.service-box {
+			margin-bottom: 40px;
+		}
+
+		.service-box h4 {
+			color: #222;
+			font-size: 20px;
+			font-weight: 400;
+		}
+
+		.service-box i {
+			margin-right: 10px;
+		}
+
+		.service-box p {
+			font-size: 16px;
+			line-height: 26px;
+			font-weight: 300;
+		}
+
+		/*------------------------------------------*/
+		/*	  SERVICE BUTTONS/*------------------------------------------*/
+		#service-buttons {
+			margin-top: 30px;
+		}
+
+		#service-buttons a {
+			margin-right: 20px;
+		}
+
+		/* ==========================================================================   08. FEATURES   ========================================================================== */
+		#features {
+			background-image: url('images/features.jpg') !important;
+			background-attachment: fixed !important;
+			background-repeat: repeat;
+			background-position: 0 0;
+			padding-top: 80px;
+			padding-bottom: 40px;
+			color: #fff;
+		}
+
+		/*------------------------------------------*/
+		/*	  FEATURES TITLEBAR/*------------------------------------------*/
+		#features .titlebar h3,
+		#features .titlebar h2 {
+			color: #fff;
+		}
+
+		/*------------------------------------------*/
+		/*	  FEATURE BOX/*------------------------------------------*/
+		.features-box {
+			margin-bottom: 40px;
+		}
+
+		/*------------------------------------------*/
+		/*	  Feature Icon/*------------------------------------------*/
+		.icon-box {
+			width: 70px;
+			height: 70px;
+			line-height: 70px !important;
+			text-align: center;
+			float: left;
+			font-size: 22px;
+			color: #fff;
+		}
+
+		.icon-box i {
+			color: #00aeef;
+			font-size: 60px;
+			margin-top: 10px;
+		}
+
+		/*------------------------------------------*/
+		/*	  Feature Text/*------------------------------------------*/
+		.features-text {
+			overflow: hidden;
+			padding: 0px 0px 0px 30px;
+		}
+
+		.features-text h4 {
+			font-size: 20px;
+			font-weight: 400;
+		}
+
+		.features-text p {
+			color: #ddd;
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 26px;
+			padding-right: 20px;
+		}
+
+		/* ==========================================================================   09. HISTORY   ========================================================================== */
+		#history {
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+
+		/*------------------------------------------*/
+		/*	 TIMELINE /*------------------------------------------*/
+		.timeline {
+			background-image: url(images/timeline-bg.png);
+			background-repeat: repeat-y;
+			background-position: center center;
+			background-color: transparent;
+		}
+
+		/*------------------------------------------*/
+		/*	 TIMELINE YEAR /*------------------------------------------*/
+		.timeline-year {
+			padding: 30px 0 30px;
+		}
+
+		.timeline-year.first {
+			padding-top: 0;
+		}
+
+		.timeline-year.last {
+			padding-bottom: 0;
+		}
+
+		.timeline-year span {
+			background-color: #00aeef;
+			color: #fff;
+			font-size: 20px;
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 700;
+			padding: 10px 20px;
+		}
+
+		/*------------------------------------------*/
+		/*	 TIMELINE ITEM /*------------------------------------------*/
+		.timeline-item {
+			display: table;
+			position: relative;
+		}
+
+		.timeline-item:before {
+			width: 30px;
+			height: 30px;
+			background-color: #fff;
+			border: 2px solid #d5d5d5;
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-top: -15px;
+			margin-left: -15px;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+		}
+
+		.timeline-item-content {
+			background-color: #f5f5f5;
+			border: 1px solid #f5f5f5;
+			position: relative;
+			padding: 20px;
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 26px;
+		}
+
+		/*------------------------------------------*/
+		/*	Timeline Item Content Arrow/*------------------------------------------*/
+		.timeline-item-content:before {
+			width: 20px;
+			height: 20px;
+			background-color: #f5f5f5;
+			content: "";
+			position: absolute;
+			right: -11px;
+			top: 50%;
+			margin-top: -9px;
+			-ms-transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+
+		.timeline-item-content.pull-right:before {
+			right: auto;
+			left: -10px;
+		}
+
+		.timeline-item-content h4 {
+			font-size: 20px;
+			font-weight: 400;
+		}
+
+		/*------------------------------------------*/
+		/*	Timeline Item Hover/*------------------------------------------*/
+		.timeline-item:hover .timeline-item-content {
+			border: 1px solid #262626;
+			background-color: #262626;
+			color: #fff;
+		}
+
+		.timeline-item:hover .timeline-item-content:before {
+			background-color: #262626;
+			border-right: 1px solid #262626;
+			border-top: 1px solid #262626;
+		}
+
+		.timeline-item:hover.timeline-item:before {
+			background-color: #00aeef;
+			border-color: #00aeef;
+		}
+
+		.timeline-item:hover .timeline-item-content.pull-right:before {
+			border-color: transparent transparent #262626 #262626;
+		}
+
+		/* ==========================================================================   10. STATISTIC BANNER   ========================================================================== */
+		#statistic_banner {
+			background-image: url('images/statistic-banner_1.jpg');
+			background-attachment: fixed !important;
+			background-repeat: no-repeat;
+			background-position: top center;
+			background-size: cover;
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+
+		/*------------------------------------------*/
+		/*	  STATISTIC BANNER TITLEBAR/*------------------------------------------*/
+		#statistic_banner .titlebar h3,
+		#statistic_banner .titlebar h2 {
+			color: #fff;
+		}
+
+		/*------------------------------------------*/
+		/*	  STATISTIC BLOCK/*------------------------------------------*/
+		.statistic-block {
+			text-align: center;
+		}
+
+		.statistic-icon {
+			color: #fff;
+			font-size: 80px;
+			line-height: 80px;
+			font-weight: 700;
+			margin-bottom: 30px;
+		}
+
+		.statistic-number {
+			color: #fff;
+			font-size: 70px !important;
+			font-family: 'Quicksand', sans-serif;
+			line-height: 70px;
+			font-weight: 400;
+			margin-bottom: 20px;
+		}
+
+		.statistic-text {
+			color: #fff;
+			font-size: 24px !important;
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 300;
+			text-transform: uppercase;
+		}
+
+		/* ==========================================================================   11. LATEST WORKS   ========================================================================== */
+		#portfolio {
+			padding-top: 80px;
+		}
+
+		/*------------------------------------------*/
+		/*	   PORTFOLIO TITLEBAR/*------------------------------------------*/
+		#portfolio .titlebar {
+			margin-bottom: 40px;
+		}
+
+		/*------------------------------------------*/
+		/*	  FILTER BUTTONS/*------------------------------------------*/
+		#gallery-filter {
+			margin-bottom: 50px;
+		}
+
+		.btn-toolbar .btn-group {
+			float: none;
+		}
+
+		/*------------------------------------------*/
+		/*	   Button Settings/*------------------------------------------*/
+		#gallery-filter .btn-group>.btn {
+			background: #f4f4f4;
+			color: #333;
+			font-size: 15px;
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 400;
+			text-transform: uppercase;
+			margin: 0 3px;
+			padding: 8px 16px;
+			text-shadow: none;
+			-webkit-box-shadow: 0 0 0 0;
+			-moz-box-shadow: 0 0 0 0;
+			box-shadow: 0 0 0 0;
+			-webkit-transition: all 300ms ease-in-out;
+			-moz-transition: all 300ms ease-in-out;
+			-o-transition: all 300ms ease-in-out;
+			-ms-transition: all 300ms ease-in-out;
+			transition: all 300ms ease-in-out;
+		}
+
+		.btn-group>.btn:first-child:not(:last-child),
+		.btn-group>.btn:last-child:not(:first-child) {
+			-webkit-border-radius: 0;
+			-moz-border-radius: 0;
+			border-radius: 0;
+		}
+
+		/*------------------------------------------*/
+		/*	   Filter Button Hover/*------------------------------------------*/
+		#gallery-filter .btn-group>.btn:hover {
+			color: #fff;
+			background-color: #00aeef;
+		}
+
+		/*------------------------------------------*/
+		/*	  Filter Button Active/*------------------------------------------*/
+		#gallery-filter .btn-group>.btn.active,
+		#gallery-filter .btn-group>.btn.focus {
+			color: #222;
+			background-color: #00aeef;
+			box-shadow: 0 0 0 0;
+			cursor: default;
+		}
+
+		/*------------------------------------------*/
+		/*	  PORTFOLIO IMAGES HOLDER/*------------------------------------------*/
+		.portfolio-items-list {
+			margin: 0;
+		}
+
+		/*------------------------------------------*/
+		/*	  Portfolio Item/*------------------------------------------*/
+		.portfolio-item {
+			position: relative;
+			display: none;
+			opacity: 0;
+			-moz-opacity: 0;
+			padding: 0;
+			text-align: center;
+		}
+
+		.portfolio-item a {
+			cursor: url(images/pointer.png), crosshair;
+		}
+
+		.hover-overlay {
+			width: 100%;
+			height: auto;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.hover-overlay img {
+			-webkit-transition: all 600ms;
+			-moz-transition: all 600ms;
+			-o-transition: all 600ms;
+			transition: all 600ms;
+		}
+
+		/*------------------------------------------*/
+		/*	  Overlay Content /*------------------------------------------*/
+		.overlay-content {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 20;
+			width: 100%;
+			text-align: center;
+			zoom: 1;
+			opacity: 0;
+			-webkit-transition: all 200ms ease-out;
+			-moz-transition: all 200ms ease-out;
+			-o-transition: all 200ms ease-out;
+			transition: all 200ms ease-out;
+		}
+
+		.overlay-content h4 {
+			color: #fff;
+			font-size: 22px;
+			font-weight: 800;
+			text-transform: uppercase;
+		}
+
+		.overlay-content h5 {
+			color: #fff;
+			font-size: 15px;
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+
+		/*------------------------------------------*/
+		/*	  Overlay Background /*------------------------------------------*/
+		.item-overlay {
+			opacity: 0;
+			-moz-opacity: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 174, 239, 0.75);
+			-moz-transition: opacity 400ms ease-out;
+			-webkit-transition: opacity 400ms ease-out;
+			-o-transition: opacity 400ms ease-out;
+			transition: opacity 400ms ease-out;
+		}
+
+		/*------------------------------------------*/
+		/*	  Image Hover Effect /*------------------------------------------*/
+		.hover-overlay:hover>img {
+			transform: scale(1.2);
+			-ms-transform: scale(1.2);
+			-webkit-transform: scale(1.2);
+			-o-transform: scale(1.2);
+			-moz-transform: scale(1.2);
+		}
+
+		.hover-overlay:hover .item-overlay {
+			opacity: 1;
+			-moz-opacity: 1;
+		}
+
+		.portfolio-item:hover .overlay-content {
+			bottom: 40%;
+			opacity: 1;
+			-moz-opacity: 1;
+		}
+
+		/* ==========================================================================   12. TEAM   ========================================================================== */
+		#team {
+			padding-top: 80px;
+			padding-bottom: 30px;
+		}
+
+		/*------------------------------------------*/
+		/*	  TEAM MEMBER/*------------------------------------------*/
+		.team-member {
+			margin-bottom: 50px;
+		}
+
+		.team-member .img-responsive {
+			display: inline-block;
+		}
+
+		/*------------------------------------------*/
+		/*	  Team Member Meta/*------------------------------------------*/
+		.team-img-meta h5 {
+			text-transform: uppercase;
+			font-weight: 800;
+			margin: 20px 0px 10px 0;
+		}
+
+		.team-img-meta h6 {
+			font-size: 14px;
+			color: #00aeef;
+			text-transform: uppercase;
+			font-weight: 400;
+			margin-bottom: 10px;
+		}
+
+		.team-img-meta p {
+			color: #757575;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: 300;
+		}
+
+		/*------------------------------------------*/
+		/*	  Team Member Social Icons /*------------------------------------------*/
+		.team-member-socials {
+			text-align: right;
+			display: inline-block;
+			margin: 10px auto;
+		}
+
+		.team-member-socials li {
+			float: left;
+			display: inline-block !important;
+			vertical-align: top;
+			width: auto !important;
+			clear: none !important;
+		}
+
+		.page_social {
+			width: 30px;
+			height: 30px;
+			color: #666;
+			font-size: 16px;
+			text-align: center;
+			display: block;
+			text-decoration: none;
+			margin: 0 3px 5px;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+			-webkit-transition: all 250ms ease-in-out;
+			-moz-transition: all 250ms ease-in-out;
+			-o-transition: all 250ms ease-in-out;
+			-ms-transition: all 250ms ease-in-out;
+			transition: all 250ms ease-in-out;
+		}
+
+		/*------------------------------------------*/
+		/*	 Team Member Social Icons Hover /*------------------------------------------*/
+		.page_social.ico_facebook:hover {
+			color: #3b5998;
+		}
+
+		.page_social.ico_twitter:hover {
+			color: #00a9ed;
+		}
+
+		.page_social.ico_behance:hover {
+			color: #00a8e7;
+		}
+
+		.page_social.ico_google_plus:hover {
+			color: #cd1111;
+		}
+
+		.page_social.ico_linkedin:hover {
+			color: #015886;
+		}
+
+		.page_social.ico_dribbble:hover {
+			color: #d92d84;
+		}
+
+		.page_social.ico_instagram:hover {
+			color: #beb3a8;
+		}
+
+		.page_social.ico_pinterest:hover {
+			color: #ac281a;
+		}
+
+		.page_social.ico_dropbox:hover {
+			color: #008ad2;
+		}
+
+		.page_social.ico_skype:hover {
+			color: #00a9ed;
+		}
+
+		.page_social.ico_youtube:hover {
+			color: #cd1b20;
+		}
+
+		.page_social.ico_tumblr:hover {
+			color: #3a5976;
+		}
+
+		.page_social.ico_vimeo:hover {
+			color: #00adee;
+		}
+
+		.page_social.ico_flickr:hover {
+			color: #d2d2d2;
+		}
+
+		.page_social.ico_github:hover {
+			color: #222;
+		}
+
+		.page_social.ico_renren:hover {
+			color: #364a83;
+		}
+
+		.page_social.ico_vk:hover {
+			color: #3b5998;
+		}
+
+		.page_social.ico_xing:hover {
+			color: #015f5e;
+		}
+
+		.page_social.ico_weibo:hover {
+			color: #be4443;
+		}
+
+		.page_social.ico_rss:hover {
+			color: #ff6600;
+		}
+
+		.page_social.ico_digg:hover {
+			color: #222;
+		}
+
+		.page_social.ico_deviantart:hover {
+			color: #57675d;
+		}
+
+		.page_social.ico_envelope:hover {
+			color: #999;
+		}
+
+		.page_social.ico_delicious:hover {
+			color: #0A0A0A;
+		}
+
+		/* ==========================================================================   13. PRICING    ========================================================================== */
+		#pricing {
+			background-color: #f5f5f5;
+			border-top: 1px solid #eee;
+			border-bottom: 1px solid #eee;
+			padding-top: 80px;
+			padding-bottom: 50px;
+		}
+
+		/*------------------------------------------*/
+		/*	 PRICING TABLE/*------------------------------------------*/
+		#price_1,
+		#price_2,
+		#price_3,
+		#price_4 {
+			margin-bottom: 50px;
+			padding: 0 5px;
+		}
+
+		.pricing-table {
+			background-color: #fff;
+			border: 1px solid #ccc;
+			-webkit-border-radius: 6px;
+			-moz-border-radius: 6px;
+			border-radius: 6px;
+		}
+
+		/*------------------------------------------*/
+		/*	 Table Header/*------------------------------------------*/
+		.pricing-table h3 {
+			font-size: 24px;
+			font-weight: 700;
+			line-height: 100px;
+			text-transform: uppercase;
+			margin-bottom: 0;
+		}
+
+		/*------------------------------------------*/
+		/*	 Table Price Plan/*------------------------------------------*/
+		.pricing-table .price {
+			background-color: #eee;
+			height: 120px;
+			color: #222;
+			font-family: 'Quicksand', sans-serif;
+			font-weight: 700;
+			line-height: 120px;
+			border-top: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+		}
+
+		.price-row .price span {
+			font-size: 75px;
+		}
+
+		.price-row .price sup {
+			top: -35px;
+			font-size: 30px;
+			font-weight: 300;
+		}
+
+		/*------------------------------------------*/
+		/*	 Table Body/*------------------------------------------*/
+		.pricing-table ul.features {
+			color: #333;
+			font-size: 16px;
+			font-weight: 300;
+			text-transform: uppercase;
+			padding: 5px 40px;
+		}
+
+		.pricing-table ul.features li {
+			border-bottom: 1px solid #ccc;
+			padding: 13px 0;
+		}
+
+		/*------------------------------------------*/
+		/*	 Table Button/*------------------------------------------*/
+		.pricing-table .btn {
+			margin: 30px 0;
+		}
+
+		/*------------------------------------------*/
+		/*	 Table Highlight/*------------------------------------------*/
+		.pricing-table.highlight {
+			background-color: #00aeef;
+			border-color: #d9a701;
+		}
+
+		.pricing-table.highlight .price {
+			background-color: #d9a701;
+			color: #fff;
+			border-color: #d9a701;
+		}
+
+		.pricing-table.highlight ul.features {
+			color: #333;
+		}
+
+		.pricing-table.highlight ul.features li {
+			border-color: #d9a701;
+		}
+
+		/*------------------------------------------*/
+		/*	 Table Highlight Buttons/*------------------------------------------*/
+		.pricing-table.highlight .btn-theme {
+			background-color: #333;
+			color: #fff;
+		}
+
+		.pricing-table.highlight .btn-theme:hover {
+			background-color: #444;
+		}
+
+		/* ==========================================================================   14. CLIENTS   ========================================================================== */
+		#clients {
+			padding-top: 80px;
+			padding-bottom: 150px;
+			position: relative;
+		}
+
+		/*------------------------------------------*/
+		/*	 CLIENTS CAROUSEL NAVIGATION/*------------------------------------------*/
+		.customNavigation {
+			display: inline-block;
+			position: absolute;
+			bottom: 80px;
+			right: 49%;
+		}
+
+		.customNavigation .btn {
+			padding: 4px 10px;
+		}
+
+		.customNavigation i {
+			font-size: 20px;
+			color: #fff;
+		}
+
+		/* ==========================================================================   15 TESTIMONIALS    ========================================================================== */
+		#testimonials {
+			background-color: #f5f5f5;
+			border-top: 1px solid #eee;
+			border-bottom: 1px solid #eee;
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+
+		/*------------------------------------------*/
+		/*	  TESTIMONIALS TITLEBAR/*------------------------------------------*/
+		#testimonials h3 {
+			font-size: 28px;
+			font-weight: 400;
+			text-transform: uppercase;
+			margin-bottom: 40px;
+		}
+
+		#testimonials .clients-counter {
+			color: #00aeef;
+			font-size: 30px;
+			font-weight: 700;
+		}
+
+		/*------------------------------------------*/
+		/*	  Testimonial Message /*------------------------------------------*/
+		.testi-content {
+			background-color: #fff;
+			position: relative;
+			padding: 0;
+			margin: 0 0 40px;
+			border: 1px solid #e6e6e6;
+			-webkit-border-radius: 6px;
+			-moz-border-radius: 6px;
+			-o-border-radius: 6px;
+			border-radius: 6px;
+		}
+
+		.testimonial p {
+			color: #777;
+			margin: 0;
+			padding: 20px 15px;
+		}
+
+		/*------------------------------------------*/
+		/*	  Testimonial Message Arrow/*------------------------------------------*/
+		.testi-arrow {
+			height: 32px;
+			width: 32px;
+			background-image: url(images/testimonial-arrow-down.png);
+			background-attachment: scroll;
+			background-position: 0% 0%;
+			background-repeat: no-repeat;
+			background-color: transparent;
+			position: absolute;
+			top: 100%;
+			left: 47%;
+		}
+
+		/*------------------------------------------*/
+		/*	  Testimonial Message Avatar /*------------------------------------------*/
+		.testimonial .client-img {
+			width: 65px;
+			height: 65px;
+			display: inline-block;
+			margin: 0 auto 10px;
+		}
+
+		.testimonial .client-img img {
+			-webkit-border-radius: 100%;
+			-moz-border-radius: 100%;
+			-o-border-radius: 100%;
+			border-radius: 100%;
+		}
+
+		/*------------------------------------------*/
+		/*	  Testimonial Message Author/*------------------------------------------*/
+		.testimonial .testi-author {
+			display: inline-block;
+			padding: 0 0 0 15px;
+			text-align: left;
+			position: relative;
+			top: 10px;
+		}
+
+		.testimonial h4 {
+			color: #000;
+			font-size: 20px;
+			font-weight: 400;
+			margin-bottom: 0;
+			display: block;
+		}
+
+		.testimonial span {
+			color: #999;
+			font-size: 15px;
+			margin: 0 0 20px;
+			display: block;
+		}
+
+		/* ==========================================================================   16. BLOG   ========================================================================== */
+		#blog {
+			padding-top: 80px;
+			padding-bottom: 50px;
+		}
+
+		/*------------------------------------------*/
+		/*	  BLOG ARTICLE/*------------------------------------------*/
+		#blog article {
+			margin-bottom: 50px;
+		}
+
+		/*------------------------------------------*/
+		/*	  Blog Post Titlebar/*------------------------------------------*/
+		#blog .blog-post-titlebar h4 {
+			font-size: 15px;
+			line-height: 24px;
+			font-weight: 500;
+			margin: 20px 0 5px;
+			text-transform: uppercase;
+		}
+
+		/*------------------------------------------*/
+		/*	  Blog Post Meta/*------------------------------------------*/
+		.blog-post-info {
+			color: #666;
+			padding-bottom: 10px;
+			font-style: italic;
+		}
+
+		.blog-post-info a {
+			color: #00aeef;
+		}
+
+		/*------------------------------------------*/
+		/*	  Blog Post Description/*------------------------------------------*/
+		.blog-post-desc {
+			line-height: 24px;
+			margin-bottom: 20px;
+		}
+
+		/*------------------------------------------*/
+		/*	  Blog Post Button/*------------------------------------------*/
+		#blog .btn-theme {
+			font-size: 13px;
+			text-transform: uppercase;
+			font-weight: 700;
+			padding: 8px 16px;
+		}
+
+		/*------------------------------------------*/
+		/*	  Video Content Settings/*------------------------------------------*/
+		.video-block {
+			position: relative;
+			padding-bottom: 75.25%;
+			padding-top: 0px;
+			height: 0;
+			overflow: hidden;
+		}
+
+		.video-block iframe,
+		.video-block object,
+		.video-block embed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: 0;
+		}
+
+		/* ==========================================================================   17. PROMO LINE   ========================================================================== */
+		#promo_line {
+			background-image: url('images/promo-line.jpg') !important;
+			background-attachment: fixed !important;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+
+		/*------------------------------------------*/
+		/*	 PROMO LINE CONTENT/*------------------------------------------*/
+		#promo_line h2 {
+			color: #fff;
+			font-size: 36px;
+			line-height: 42px;
+			font-weight: 400;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			margin-bottom: 5px;
+		}
+
+		#promo_line p {
+			color: #fff;
+			font-size: 20px;
+			font-weight: 300;
+			line-height: 36px;
+			margin-bottom: 20px;
+		}
+
+		#promo_line a {
+			margin-right: 15px;
+		}
+
+		/* ==========================================================================   18. CONTACT-INFO    ========================================================================== */
+		#contact-info {
+			padding-top: 80px;
+			padding-bottom: 30px;
+		}
+
+		/*------------------------------------------*/
+		/*	 Contact Info/*------------------------------------------*/
+		.contact-info {
+			margin-bottom: 40px;
+		}
+
+		/*------------------------------------------*/
+		/*	 Contact Info Icon/*------------------------------------------*/
+		.contact-info .fa {
+			color: #00aeef;
+			font-size: 60px;
+			line-height: 60px;
+			margin-bottom: 10px;
+		}
+
+		/*------------------------------------------*/
+		/*	 Contact Text/*------------------------------------------*/
+		.contact-info h4 {
+			color: #222;
+			font-size: 18px;
+			text-transform: uppercase;
+			font-weight: 800;
+		}
+
+		.contact-info p {
+			color: #666;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: 300;
+		}
+
+		.contact-info a {
+			color: #00aeef;
+			font-weight: 700;
+		}
+
+		.contact-info a:hover {
+			color: #00aeef;
+		}
+
+		/* ==========================================================================   19. GOOGLE MAP   ========================================================================== */
+		.googlemap-wrapper {
+			position: relative;
+		}
+
+		.googlemap-wrapper img {
+			max-width: none !important;
+		}
+
+		.map-canvas {
+			width: 100%;
+			height: 500px;
+			padding: 6px;
+			background-color: #f0f0f0;
+			border: 1px solid #ddd;
+		}
+
+		.map-canvas:before {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			display: block;
+			margin: -15px 0 0 -15px;
+			width: 30px;
+			height: 30px;
+			color: #2f2f2f;
+			content: '\f110';
+			text-align: center;
+			font-size: 20px;
+			font-family: 'FontAwesome';
+			line-height: 30px;
+			-webkit-animation: spin 2s infinite linear;
+			animation: spin 2s infinite linear;
+			font-style: normal;
+			font-weight: normal;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+		/* ==========================================================================   20. FOOTER   ========================================================================== */
+		#footer {
+			padding-top: 80px;
+			padding-bottom: 60px;
+			background-color: #262626;
+		}
+
+		/*------------------------------------------*/
+		/*	  Newsletter/*------------------------------------------*/
+		#newsletter {
+			margin-bottom: 10px;
+		}
+
+		#newsletter h3 {
+			color: #ddd;
+			font-size: 22px;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 5px;
+			margin-bottom: 5px;
+		}
+
+		#newsletter p {
+			color: #ddd;
+			line-height: 26px;
+			font-weight: 300;
+			margin-bottom: 0;
+		}
+
+		.message {
+			font-size: 15px;
+			margin-bottom: 20px;
+		}
+
+		#newsletter_form {
+			margin: 15px auto;
+			width: 50%;
+		}
+
+		/*------------------------------------------*/
+		/*	  Newsletter Form Input/*------------------------------------------*/
+		#newsletter form input[type="email"] {
+			background-color: #fff;
+			border: 1px solid #ccc;
+			width: 74%;
+			color: #414141;
+			font-size: 16px;
+			font-weight: 300;
+			padding: 10px 15px;
+			-webkit-border-radius: 6px 0 0 6px;
+			-moz-border-radius: 6px 0 0 6px;
+			-o-border-radius: 6px 0 0 6px;
+			border-radius: 6px 0 0 6px;
+		}
+
+		#newsletter form input[type="submit"] {
+			width: 25%;
+			background-color: #00aeef;
+			border: 1px solid #00aeef;
+			color: #fff;
+			font-size: 16px;
+			font-weight: 900;
+			text-transform: uppercase;
+			padding: 10px 15px;
+			-webkit-border-radius: 0 6px 6px 0;
+			-moz-border-radius: 0 6px 6px 0;
+			-o-border-radius: 0 6px 6px 0;
+			border-radius: 0 6px 6px 0;
+			-webkit-transition: all 350ms ease-in-out;
+			-moz-transition: all 350ms ease-in-out;
+			-o-transition: all 350ms ease-in-out;
+			-ms-transition: all 350ms ease-in-out;
+			transition: all 350ms ease-in-out;
+		}
+
+		#newsletter form input[type="submit"]:hover {
+			background-color: #034EA2;
+		}
+
+		#footer_copyright p {
+			color: #ddd;
+			/* line-height: 40px; */
+		}
+
+		#footer_copyright p span {
+			color: #00aeef;
+			font-size: 15px;
+			font-weight: 800;
+		}
+
+		/*------------------------------------------*/
+		/*	 Footer Social Icons  /*------------------------------------------*/
+		.contact-socials {
+			display: inline-block;
+			padding-left: 0;
+		}
+
+		.contact-socials li {
+			float: left;
+			width: auto !important;
+			display: inline-block !important;
+			vertical-align: top;
+			clear: none !important;
+			padding: 0;
+		}
+
+		/*------------------------------------------*/
+		/*	 Footer Social Icon Setting /*------------------------------------------*/
+		.foo_social {
+			text-align: center;
+			color: #999;
+			width: 40px;
+			height: 40px;
+			font-size: 18px;
+			line-height: 40px;
+			margin: 0 5px;
+			display: block;
+			text-decoration: none;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+			-webkit-transition: all 250ms ease-in-out;
+			-moz-transition: all 250ms ease-in-out;
+			-o-transition: all 250ms ease-in-out;
+			-ms-transition: all 250ms ease-in-out;
+			transition: all 250ms ease-in-out;
+		}
+
+		/*------------------------------------------*/
+		/*	 Footer Social Icons Hover /*------------------------------------------*/
+		.foo_social.ico-facebook:hover {
+			background-color: #3b5998;
+			color: #fff;
+		}
+
+		.foo_social.ico-twitter:hover {
+			background-color: #00a9ed;
+			color: #fff;
+		}
+
+		.foo_social.ico-behance:hover {
+			background-color: #00a8e7;
+			color: #fff;
+		}
+
+		.foo_social.ico-google-plus:hover {
+			background-color: #cd1111;
+			color: #fff;
+		}
+
+		.foo_social.ico-linkedin:hover {
+			background-color: #015886;
+			color: #fff;
+		}
+
+		.foo_social.ico-dribbble:hover {
+			background-color: #d92d84;
+			color: #fff;
+		}
+
+		.foo_social.ico-instagram:hover {
+			background-color: #beb3a8;
+			color: #fff;
+		}
+
+		.foo_social.ico-pinterest:hover {
+			background-color: #ac281a;
+			color: #fff;
+		}
+
+		.foo_social.ico-dropbox:hover {
+			background-color: #008ad2;
+			color: #fff;
+		}
+
+		.foo_social.ico-skype:hover {
+			background-color: #00a9ed;
+			color: #fff;
+		}
+
+		.foo_social.ico-youtube:hover {
+			background-color: #cd1b20;
+			color: #fff;
+		}
+
+		.foo_social.ico-tumblr:hover {
+			background-color: #3a5976;
+			color: #fff;
+		}
+
+		.foo_social.ico-vimeo:hover {
+			background-color: #00adee;
+			color: #fff;
+		}
+
+		.foo_social.ico-flickr:hover {
+			background-color: #d2d2d2;
+			color: #fff;
+		}
+
+		.foo_social.ico-github:hover {
+			background-color: #222;
+			color: #fff;
+		}
+
+		.foo_social.ico-renren:hover {
+			background-color: #364a83;
+			color: #fff;
+		}
+
+		.foo_social.ico-vk:hover {
+			background-color: #3b5998;
+			color: #fff;
+		}
+
+		.foo_social.ico-xing:hover {
+			background-color: #015f5e;
+			color: #fff;
+		}
+
+		.foo_social.ico-weibo:hover {
+			background-color: #be4443;
+			color: #fff;
+		}
+
+		.foo_social.ico-rss:hover {
+			background-color: #ff6600;
+			color: #fff;
+		}
+
+		.foo_social.ico-digg:hover {
+			background-color: #222;
+			color: #fff;
+		}
+
+		.foo_social.ico-deviantart:hover {
+			background-color: #57675d;
+			color: #fff;
+		}
+
+		.foo_social.ico-envelope:hover {
+			background-color: #999;
+			color: #fff;
+		}
+
+		.foo_social.ico-delicious:hover {
+			background-color: #0A0A0A;
+			color: #fff;
+		}
+
+		/* ==========================================================================   21. SCROLL TO TOP   ========================================================================== */
+		#scrollUp {
+			display: none;
+			width: 40px;
+			height: 40px;
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			background-image: url('images/back-to-top.png') !important;
+			background-repeat: no-repeat;
+			background-position: 50% 48%;
+			background-color: rgb(0 174 239);
+			-webkit-transition: all 250ms linear;
+			-moz-transition: all 250ms linear;
+			transition: all 250ms linear;
+		}
+
+		#scrollUp:hover {
+			background-color: #034EA2 !important;
+		}
+
+		nav a#pull {
+			display: none;
+		}
+
+		/* ==========================================================================   22. CONTACT FORM RESPONSE PAGE      ========================================================================== */
+		#form_response {
+			margin: 50px auto;
+		}
+
+		#form_response .img-responsive {
+			display: inline-block;
+		}
+
+		#form_response h1 {
+			font-size: 26px !important;
+			font-weight: 400;
+			margin-top: 10px;
+			text-transform: uppercase;
+		}
+
+		#form_response p {
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 24px;
+			margin-bottom: 20px;
+		}
+
+		#form_response .btn-theme {
+			background-color: #00aeef;
+			color: #333;
+			font-size: 14px;
+			text-transform: uppercase;
+			font-weight: 700;
+			padding: 10px 20px;
+			-webkit-transition: all 300ms ease-in-out;
+			-moz-transition: all 300ms ease-in-out;
+			-o-transition: all 300ms ease-in-out;
+			-ms-transition: all 300ms ease-in-out;
+			transition: all 300ms ease-in-out;
+		}
+
+		#form_response .btn-theme:hover {
+			background-color: #00aeef;
+			color: #fff;
+		}
+
+		.statistic-number1 {
+			color: #fff;
+			font-size: 70px !important;
+			font-family: 'Quicksand', sans-serif;
+			line-height: 70px !important;
+			font-weight: 400;
+			margin-bottom: 20px;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm {
+			font-family: Quicksand, sans-serif !important;
+			color: #ffffff;
+			font-size: 11px;
+			background-color: #00aeef;
+			/* border: none #ebf4fa; */
+			padding: 5px !important;
+			width: 100% !important;
+			overflow: hidden;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm input,
+		#IIT-signUpForm.IIT-signUpForm select {
+			font-family: Quicksand, sans-serif !important;
+			font-size: 16px !important;
+			border: 1px solid #ffffff !important;
+			width: 400px !important;
+			padding: 3px 5px;
+			color: #383838 !important;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm * {
+			color: #ffffff;
+			font-size: 20px !important;
+		}
+
+		#IIT-button-submit {
+			font-size: 50px !important;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm .IIT-button input {
+			background-color: #ffffff;
+			color: #00AEEF !important;
+			border-color: #00AEEF;
+			width: 100px !important;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-right: 5px;
+			border-radius: 5px;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm .IIT-button {
+			margin: 18px 0 4px 0;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm .IIT-button input:hover {
+			background-color: #383838;
+			color: #ffffff !important;
+			border-color: #383838 !important;
+			width: 100px !important;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-right: 5px;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm {
+			border-radius: 10px;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm label {
+			width: 100% !important;
+		}
+
+		#demo {
+			background-color: #f8f8f8;
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+
+		/*    ------------------------------------------------------					Responsive Styles   ------------------------------------------------------*/
+		@media (min-width: 992px) and (max-width: 1199px) {
+
+			/*------------------------------------------*/
+			/*	 INTRO CONTENT	/*------------------------------------------*/
+			#intro h2 {
+				font-size: 20px;
+				line-height: 29px;
+			}
+
+			.intro_text p {
+				font-size: 16px;
+			}
+
+			/*------------------------------------------*/
+			/*	 INTRO REGISTER FORM 	/*------------------------------------------*/
+			.form_register form {
+				margin: 0 15px;
+			}
+
+			/*------------------------------------------*/
+			/*	TABS HOLDER IMAGE	/*------------------------------------------*/
+			#tabs-holder img {
+				margin-top: 40px;
+			}
+
+			/*------------------------------------------*/
+			/*	ACCORDION HOLDER IMAGE	/*------------------------------------------*/
+			#accordion-holder img {
+				margin-top: 60px;
+			}
+
+			/*------------------------------------------*/
+			/*	  STATISTIC BLOCK	/*------------------------------------------*/
+			.statistic-number {
+				font-size: 55px !important;
+				line-height: 55px !important;
+			}
+
+			.statistic-text {
+				font-size: 20px !important;
+			}
+
+			.statistic-number1 {
+				font-size: 55px !important;
+				line-height: 55px !important;
+			}
+
+			/*------------------------------------------*/
+			/*	 Portfolio Overlay Content 	/*------------------------------------------*/
+			.overlay-content h4 {
+				font-size: 20px;
+			}
+
+			.portfolio-item:hover .overlay-content {
+				bottom: 35%;
+			}
+
+			/*------------------------------------------*/
+			/*	 Table Body	/*------------------------------------------*/
+			.pricing-table ul.features {
+				font-size: 14px;
+				padding: 5px 30px;
+			}
+
+			/*------------------------------------------*/
+			/*	 NEWSLETTER	/*------------------------------------------*/
+			#newsletter_form {
+				width: 60%;
+			}
+
+			/*------------------------------------------*/
+			/*	  Newsletter Form Input	/*------------------------------------------*/
+			#newsletter form input[type="email"] {
+				width: 70%;
+			}
+
+			#newsletter form input[type="submit"] {
+				width: 29%;
+			}
+		}
+
+		@media only screen and (max-width: 1000px) {
+			.navbar-toggle {
+				display: block;
+			}
+
+			#navigation-menu {
+				display: none !important;
+			}
+		}
+
+		@media only screen and (max-width: 991px) {
+
+			/*------------------------------------------*/
+			/*	 Navigation Menu    	/*------------------------------------------*/
+			.navbar-nav>li>a {
+				padding: 0 10px;
+			}
+
+			/*------------------------------------------*/
+			/*	 INTRO CONTENT	/*------------------------------------------*/
+			#intro_content {
+				padding-top: 190px;
+				padding-bottom: 140px;
+				text-align: center;
+			}
+
+			#intro h2 {
+				font-size: 28px;
+				line-height: 36px;
+				padding: 0 4%;
+			}
+
+			#intro h3 {
+				font-size: 32px;
+			}
+
+			.intro_text p {
+				padding: 0 15%;
+			}
+
+			/*------------------------------------------*/
+			/*	 INTRO BUTTONS	/*------------------------------------------*/
+			.intro_buttons {
+				margin-bottom: 40px;
+				text-align: center;
+			}
+
+			/*------------------------------------------*/
+			/*	 INTRO REGISTER FORM  	/*------------------------------------------*/
+			#intro_form {
+				width: 76%;
+				margin-left: 12%;
+			}
+
+			/*------------------------------------------*/
+			/*	  FEATURE BOX	/*------------------------------------------*/
+			.features-box {
+				text-align: center;
+			}
+
+			/*------------------------------------------*/
+			/*	  Feature Icon	/*------------------------------------------*/
+			.icon-box {
+				width: auto;
+				height: auto;
+				float: none !important;
+				margin-bottom: 10px;
+				margin: 0 auto;
+			}
+
+			.icon-box i {
+				margin-top: 0;
+			}
+
+			/*------------------------------------------*/
+			/*	  Feature Text	/*------------------------------------------*/
+			.features-text {
+				padding: 0px;
+			}
+
+			.features-text p {
+				padding-right: 0;
+			}
+
+			/*------------------------------------------*/
+			/*	TABS HOLDER IMAGE	/*------------------------------------------*/
+			#tabs-holder img {
+				margin-top: 30px;
+				margin-bottom: 20px;
+			}
+
+			/*------------------------------------------*/
+			/*	ACCORDION HOLDER IMAGE	/*------------------------------------------*/
+			#accordion-holder img {
+				margin-bottom: 40px;
+			}
+
+			/*------------------------------------------*/
+			/*	 Message Text	/*------------------------------------------*/
+			.client-msg p {
+				font-size: 16px;
+				line-height: 24px;
+			}
+
+			/*------------------------------------------*/
+			/*	  STATISTIC BLOCK	/*------------------------------------------*/
+			.statistic-number {
+				font-size: 40px !important;
+				line-height: 40px !important;
+			}
+
+			.statistic-text {
+				font-size: 18px !important;
+			}
+
+			.statistic-number1 {
+				font-size: 40px !important;
+				line-height: 40px !important;
+			}
+
+			/*------------------------------------------*/
+			/*	Timeline Item Content	/*------------------------------------------*/
+			.timeline-item-content {
+				text-align: center;
+			}
+
+			/*------------------------------------------*/
+			/*	Timeline Item Content Arrow	/*------------------------------------------*/
+			.timeline-item:before,
+			.timeline-item-content:before,
+			.timeline-item-content.pull-right:before {
+				display: none;
+			}
+
+			/*------------------------------------------*/
+			/*	 Portfolio Overlay Content 	/*------------------------------------------*/
+			.overlay-content h4 {
+				font-size: 20px;
+			}
+
+			.portfolio-item:hover .overlay-content {
+				bottom: 35%;
+			}
+
+			/*------------------------------------------*/
+			/*	   Button Settings	/*------------------------------------------*/
+			#gallery-filter .btn-group>.btn {
+				font-size: 14px;
+				margin: 0 3px;
+				padding: 6px 12px;
+			}
+
+			/*------------------------------------------*/
+			/*	 Clients Carousel Navigation	/*------------------------------------------*/
+			.customNavigation {
+				right: 47%;
+			}
+
+			/*------------------------------------------*/
+			/*	 Google Map	/*------------------------------------------*/
+			.map-canvas {
+				height: 450px;
+			}
+
+			/*------------------------------------------*/
+			/*	 NEWSLETTER	/*------------------------------------------*/
+			#newsletter_form {
+				width: 75%;
+			}
+
+			/*------------------------------------------*/
+			/*	  Newsletter Form Input	/*------------------------------------------*/
+			#newsletter form input[type="email"] {
+				width: 65%;
+			}
+
+			#newsletter form input[type="submit"] {
+				width: 34%;
+			}
+		}
+
+		@media only screen and (max-width: 767px) {
+
+			/*------------------------------------------*/
+			/*	 Section Titlebar	/*------------------------------------------*/
+			.titlebar h2 {
+				font-size: 32px;
+			}
+
+			.titlebar h3 {
+				font-size: 22px;
+			}
+
+			.titlebar h2:after {
+				width: 140px;
+			}
+
+			#services,
+			#features,
+			#about,
+			#about-1,
+			#skills,
+			#history,
+			#team,
+			#pricing,
+			#blog,
+			#contact-info,
+			#testimonials,
+			#contact {
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+
+			/*------------------------------------------*/
+			/*	 Logo Image    	/*------------------------------------------*/
+			.navbar-brand {
+				padding: 9px 30px;
+			}
+
+			/*------------------------------------------*/
+			/*	 Navigation Menu    	/*------------------------------------------*/
+			.navbar {
+				background-color: #fff;
+				padding: 0px;
+			}
+
+			/*------------------------------------------*/
+			/*	 Responsive Menu	/*------------------------------------------*/
+			.navbar-nav {
+				margin: 0 -15px;
+				border-top: 1px solid #444;
+				background-color: #fff;
+			}
+
+			.navbar-nav>li {
+				text-align: center;
+			}
+
+			.navbar-nav>li>a {
+				line-height: 45px;
+				text-align: center;
+			}
+
+			/*------------------------------------------*/
+			/*	 INTRO CONTENT	/*------------------------------------------*/
+			#intro_content {
+				padding-top: 160px;
+				padding-bottom: 120px;
+				text-align: center;
+			}
+
+			#intro h2 {
+				font-size: 23px;
+				line-height: 31px;
+				padding: 0 8%;
+			}
+
+			#intro h3 {
+				font-size: 30px;
+			}
+
+			.intro_text p {
+				padding: 0 15%;
+			}
+
+			/*------------------------------------------*/
+			/*	 INTRO BUTTONS	/*------------------------------------------*/
+			.intro_buttons .btn-theme {
+				font-size: 16px;
+				padding: 8px 16px;
+			}
+
+			/*------------------------------------------*/
+			/*	 Circle Progress Bars	/*------------------------------------------*/
+			#skills {
+				padding-bottom: 20px;
+			}
+
+			#skills .col-sm-3 {
+				margin-bottom: 60px;
+			}
+
+			/*------------------------------------------*/
+			/*	  STATISTIC BLOCK	/*------------------------------------------*/
+			.statistic-number {
+				font-size: 36px !important;
+				line-height: 36px !important;
+			}
+
+			.statistic-text {
+				font-size: 14px !important;
+			}
+
+			.statistic-number1 {
+				font-size: 36px !important;
+				line-height: 36px !important;
+			}
+
+			/*------------------------------------------*/
+			/*	 Portfolio Overlay Content 	/*------------------------------------------*/
+			.portfolio-item:hover .overlay-content {
+				bottom: 38%;
+			}
+
+			/*------------------------------------------*/
+			/*	 PROMO LINE CONTENT	/*------------------------------------------*/
+			#promo_line h2 {
+				font-size: 30px;
+				line-height: 36px;
+			}
+
+			#promo_line p {
+				font-size: 16px;
+				line-height: 30px;
+			}
+
+			/*------------------------------------------*/
+			/*	  TESTIMONIALS	/*------------------------------------------*/
+			.testimonial {
+				padding: 0 10%;
+				margin-bottom: 30px;
+			}
+
+			/*------------------------------------------*/
+			/*	 NEWSLETTER	/*------------------------------------------*/
+			#newsletter_form {
+				width: 85%;
+			}
+
+			/*------------------------------------------*/
+			/*	  Newsletter Form Input	/*------------------------------------------*/
+			#newsletter form input[type="email"] {
+				width: 65%;
+			}
+
+			#newsletter form input[type="submit"] {
+				width: 34%;
+			}
+		}
+
+		@media only screen and (max-width: 640px) {
+
+			/*------------------------------------------*/
+			/*	 INTRO CONTENT	/*------------------------------------------*/
+			#intro_content {
+				padding-top: 150px;
+				padding-bottom: 100px;
+			}
+
+			#intro h2 {
+				font-size: 22px;
+				line-height: 31px;
+				padding: 0 5%;
+			}
+
+			#intro h3 {
+				font-size: 28px;
+			}
+
+			.intro_text p {
+				font-size: 16px;
+				padding: 0 12%;
+			}
+
+			/*------------------------------------------*/
+			/*	 INTRO REGISTER FORM  	/*------------------------------------------*/
+			#intro_form {
+				width: 80%;
+				margin-left: 10%;
+			}
+
+			/*------------------------------------------*/
+			/*	  Service Box	/*------------------------------------------*/
+			.service-box h4 {
+				font-size: 18px;
+			}
+
+			.service-box p {
+				font-size: 14px;
+				line-height: 24px;
+			}
+
+			/*------------------------------------------*/
+			/*	  FEATURE BOX TEXT	/*------------------------------------------*/
+			.features-text p {
+				font-size: 14px;
+				line-height: 22px;
+			}
+
+			/*------------------------------------------*/
+			/*	TABS	/*------------------------------------------*/
+			.nav-tabs>li>a {
+				font-size: 16px;
+			}
+
+			/*------------------------------------------*/
+			/*	Tab Description	/*------------------------------------------*/
+			.tab-content>.tab-pane p {
+				font-size: 14px;
+				line-height: 24px;
+			}
+
+			/*------------------------------------------*/
+			/*	Panel Title	/*------------------------------------------*/
+			.panel-title {
+				font-size: 18px;
+			}
+
+			/*------------------------------------------*/
+			/*	Panel Title Icon	/*------------------------------------------*/
+			.panel-title i {
+				font-size: 24px;
+			}
+
+			/*------------------------------------------*/
+			/*	Panel Content 	/*------------------------------------------*/
+			.panel-body {
+				font-size: 14px;
+				line-height: 24px;
+			}
+
+			/*------------------------------------------*/
+			/*	  Team Member	/*------------------------------------------*/
+			.team_members_wrapper .col-xs-6 {
+				width: 100%;
+				float: none !important;
+			}
+
+			.team-img-meta p {
+				padding: 0 10%;
+			}
+
+			/*------------------------------------------*/
+			/*	 Pricing	/*------------------------------------------*/
+			.price-row .col-xs-6 {
+				width: 100%;
+				float: none !important;
+			}
+
+			.pricing-table {
+				margin: 0 40px;
+			}
+
+			/*------------------------------------------*/
+			/*	  STATISTIC BLOCK	/*------------------------------------------*/
+			.statistic-number {
+				font-size: 25px !important;
+				line-height: 25px !important;
+			}
+
+			.statistic-text {
+				font-size: 14px !important;
+			}
+
+			.statistic-number1 {
+				font-size: 25px !important;
+				line-height: 25px !important;
+			}
+
+			/*------------------------------------------*/
+			/*	 TIMELINE ITEM 	/*------------------------------------------*/
+			.timeline-item-content {
+				font-size: 14px;
+				line-height: 24px;
+			}
+
+			/*------------------------------------------*/
+			/*	  TESTIMONIALS	/*------------------------------------------*/
+			.testimonial {
+				padding: 0 5%;
+			}
+
+			/*------------------------------------------*/
+			/*	 PROMO LINE CONTENT	/*------------------------------------------*/
+			#promo_line h2 {
+				font-size: 24px;
+				line-height: 30px;
+			}
+
+			#promo_line p {
+				font-size: 14px;
+				line-height: 24px;
+			}
+
+			/*------------------------------------------*/
+			/*	  NEWSLETTER	/*------------------------------------------*/
+			#newsletter p {
+				font-size: 14px;
+				line-height: 24px;
+			}
+
+			/*------------------------------------------*/
+			/*	  Newsletter Form Input	/*------------------------------------------*/
+			#newsletter form input[type="email"] {
+				width: 65%;
+				padding: 10px 15px;
+			}
+
+			#newsletter form input[type="submit"] {
+				width: 34%;
+				padding: 10px 15px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			#stlChanger {
+				display: none;
+			}
+
+			/*------------------------------------------*/
+			/*	 Section Titlebar	/*------------------------------------------*/
+			.titlebar h2 {
+				font-size: 30px;
+			}
+
+			.titlebar h3 {
+				font-size: 20px;
+			}
+
+			.titlebar h2:after {
+				width: 120px;
+			}
+
+			#services,
+			#features,
+			#about,
+			#about-1,
+			#skills,
+			#history,
+			#team,
+			#pricing,
+			#blog,
+			#contact-info,
+			#testimonials,
+			#contact {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+
+			/*------------------------------------------*/
+			/*	 INTRO CONTENT	/*------------------------------------------*/
+			#intro_content {
+				padding-top: 150px;
+				padding-bottom: 100px;
+			}
+
+			#intro h2 {
+				font-size: 22px;
+				line-height: 35px;
+				padding: 0 5%;
+			}
+
+			#intro h3 {
+				font-size: 24px;
+				margin-bottom: 20px;
+			}
+
+			.intro_text p {
+				font-size: 16px;
+				padding: 0 5%;
+			}
+
+			/*------------------------------------------*/
+			/*	 INTRO BUTTONS	/*------------------------------------------*/
+			.intro_buttons .btn-theme {
+				font-size: 14px;
+				padding: 7px 14px;
+			}
+
+			/*------------------------------------------*/
+			/*	 INTRO REGISTER FORM  	/*------------------------------------------*/
+			#intro_form {
+				width: 100%;
+				margin-left: 0%;
+			}
+
+			.form_register form {
+				margin: 0 15px;
+			}
+
+			/*------------------------------------------*/
+			/*	 Circle Progress Bars	/*------------------------------------------*/
+			#skills .col-sm-3 {
+				width: 100%;
+				float: none !important;
+			}
+
+			/*------------------------------------------*/
+			/*	  Statistic Banner	/*------------------------------------------*/
+			#statistic_banner {
+				padding-top: 80px;
+				padding-bottom: 80px;
+			}
+
+			#statistic_banner .titlebar {
+				margin-bottom: 30px;
+			}
+
+			.statistic-block {
+				width: 100%;
+				float: none;
+				margin-top: 40px;
+			}
+
+			.statistic-number {
+				font-size: 60px !important;
+				line-height: 60px !important;
+			}
+
+			.statistic-text {
+				font-size: 20px !important;
+			}
+
+			.statistic-number1 {
+				font-size: 60px !important;
+				line-height: 60px !important;
+
+				/*------------------------------------------*/
+				/*	  Portfolio Item	/*------------------------------------------*/
+				.portfolio-item {
+					width: 100%;
+					float: none !important;
+				}
+
+				/*------------------------------------------*/
+				/*	   Portfolio Button Settings	/*------------------------------------------*/
+				#gallery-filter .btn-group>.btn {
+					font-size: 14px;
+					margin: 0 3px 5px;
+					padding: 5px 10px;
+				}
+
+				/*------------------------------------------*/
+				/*	  Team Member Meta	/*------------------------------------------*/
+				.team-img-meta p {
+					padding: 0;
+				}
+
+				/*------------------------------------------*/
+				/*	 Our Clients	/*------------------------------------------*/
+				#clients {
+					padding-bottom: 80px;
+				}
+
+				.customNavigation {
+					display: none;
+				}
+
+				/*------------------------------------------*/
+				/*	 PROMO LINE CONTENT	/*------------------------------------------*/
+				#promo_line h2 {
+					font-size: 20px;
+					line-height: 24px;
+				}
+
+				#promo_line p {
+					font-size: 14px;
+					line-height: 20px;
+				}
+
+				/*------------------------------------------*/
+				/*	  TESTIMONIALS	/*------------------------------------------*/
+				#testimonials h3 {
+					font-size: 24px;
+					line-height: 32px;
+				}
+
+				.testimonial {
+					padding: 0;
+				}
+
+				/*------------------------------------------*/
+				/*	  Newsletter Form Input	/*------------------------------------------*/
+				#newsletter form input[type="email"],
+				#newsletter form input[type="submit"] {
+					font-size: 14px;
+				}
+
+				/*------------------------------------------*/
+				/*	 NEWSLETTER	/*------------------------------------------*/
+				#newsletter_form {
+					width: 100%;
+				}
+
+				#newsletter h3 {
+					font-size: 20px;
+				}
+
+				/*------------------------------------------*/
+				/*	  Newsletter Form Input	/*------------------------------------------*/
+				#newsletter form input[type="email"] {
+					width: 65%;
+				}
+
+				#newsletter form input[type="submit"] {
+					width: 34%;
+				}
+
+				/*------------------------------------------*/
+				/*	 Contact Info	/*------------------------------------------*/
+				.contact-info {
+					width: 100%;
+					float: none !important;
+				}
+
+				/*------------------------------------------*/
+				/*	 Google Map	/*------------------------------------------*/
+				.map-canvas {
+					height: 400px;
+				}
+			}
+
+			@media (max-width: 320px) {
+
+				/*------------------------------------------*/
+				/*	 Theme Button	/*------------------------------------------*/
+				.btn-theme {
+					font-size: 13px;
+					padding: 6px 12px;
+				}
+
+				/*------------------------------------------*/
+				/*	 Section Titlebar	/*------------------------------------------*/
+				.titlebar h2 {
+					font-size: 28px;
+					line-height: 34px;
+				}
+
+				.titlebar h3 {
+					font-size: 18px;
+				}
+
+				.titlebar h2:after {
+					width: 100px;
+				}
+
+				#services,
+				#features,
+				#about,
+				#about-1,
+				#skills,
+				#history,
+				#team,
+				#pricing,
+				#blog,
+				#contact-info,
+				#testimonials,
+				#contact {
+					padding-left: 5px;
+					padding-right: 5px;
+				}
+
+				/*------------------------------------------*/
+				/*	 INTRO CONTENT	/*------------------------------------------*/
+				#intro_content {
+					padding-top: 130px;
+					padding-bottom: 80px;
+				}
+
+				#intro h2 {
+					font-size: 32px;
+					line-height: 42px;
+					margin-bottom: 5px;
+					padding: 0;
+				}
+
+				#intro h3 {
+					font-size: 16px;
+					margin-bottom: 20px;
+				}
+
+				.intro_text p {
+					font-size: 14px;
+					line-height: 22px;
+					padding: 0;
+				}
+
+				/*------------------------------------------*/
+				/*	 INTRO BUTTONS	/*------------------------------------------*/
+				.intro_buttons .btn-theme {
+					margin-bottom: 15px;
+				}
+
+				/*------------------------------------------*/
+				/*	 INTRO REGISTER FORM  	/*------------------------------------------*/
+				.form_register h4 {
+					font-size: 18px;
+				}
+
+				.form_register form {
+					margin: 0;
+				}
+
+				/*------------------------------------------*/
+				/*	  Service Box Buttons	/*------------------------------------------*/
+				#service-buttons a {
+					margin-bottom: 10px;
+				}
+
+				/*------------------------------------------*/
+				/*	TABS	/*------------------------------------------*/
+				.nav-tabs>li>a {
+					font-size: 16px;
+				}
+
+				/*------------------------------------------*/
+				/*	  Statistic Banner	/*------------------------------------------*/
+				.statistic-number {
+					font-size: 40px !important;
+					line-height: 30px !important;
+				}
+
+				.statistic-text {
+					font-size: 18px !important;
+				}
+
+				/*------------------------------------------*/
+				/*	 Pricing	/*------------------------------------------*/
+				.pricing-table {
+					margin: 0;
+				}
+
+				/*------------------------------------------*/
+				/*	 PROMO LINE CONTENT	/*------------------------------------------*/
+				#promo_line a {
+					margin-bottom: 10px;
+				}
+
+				#promo_line p {
+					font-size: 14px;
+					line-height: 20px;
+				}
+
+				/*------------------------------------------*/
+				/*	  NEWSLETTER	/*------------------------------------------*/
+				#newsletter h3 {
+					font-size: 16px;
+					line-height: 22px;
+				}
+
+				#newsletter p {
+					font-size: 14px;
+					line-height: 20px;
+				}
+
+				/*------------------------------------------*/
+				/*	  Newsletter Form Input	/*------------------------------------------*/
+				#newsletter form input[type="email"] {
+					width: 100%;
+					font-size: 14px;
+					margin-bottom: 10px;
+				}
+
+				#newsletter form input[type="submit"] {
+					width: 100%;
+					font-size: 14px;
+				}
+
+				.message {
+					font-size: 16px;
+				}
+
+				#footer_copyright p {
+					line-height: 24px;
+				}
+			}
+	</style>
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/flexslider.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/prettyPhoto.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="189727338640868" async></script>
+	<script async src="js/fbevents.js"></script>
+	<script type="text/javascript" async src="js/hotjar-1974753.js"></script>
+	<script type="text/javascript" async src="js/conversion_async.js"></script>
+	<script type="text/javascript" async src="js/analytics.js"></script>
+	<script async src="js/gtm.js"></script>
+	<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/modernizr.custom.js" type="text/javascript"></script>
+	<script src="js/jquery.easing.js" type="text/javascript"></script>
+	<script src="js/retina.js" type="text/javascript"></script>
+	<script src="js/jquery.stellar.min.js" type="text/javascript"></script>
+	<script src="js/jquery.flexslider.js" type="text/javascript"></script>
+	<script src="js/jquery.parallax-1.1.3.js" type="text/javascript"></script>
+	<script src="js/count-to.js" type="text/javascript"></script>
+	<script src="js/jquery.appear.js" type="text/javascript"></script>
+	<script src="js/jquery.mixitup.js" type="text/javascript"></script>
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script src="js/owl.carousel.js" type="text/javascript"></script>
+	<script src="js/jquery.easypiechart.min.js" type="text/javascript"></script>
+	<script src="js/jquery.validate.min.js" type="text/javascript"></script>
+	<script src="js/waypoints.min.js" type="text/javascript"></script>
+	<script src="js/custom.js" type="text/javascript"></script>
+	<script src="js/jquery.gmap3.min.js" type="text/javascript"></script> <!-- Basic -->
+	<meta charset="utf-8">
+	<title>Invertí con PPI</title>
+	<meta name="author" content="DSA79">
+	<meta name="keywords"
+		content="calculadora de bonos,  operar bonos,  rendimiento de bonos, invertir en lecaps,  comprar leliq, adquirir bonos, comprar bonos, invertir en bonos, coprar bonar, operar bonar, adquirir bonar, invertir en bonar, adquirir lecaps, comprar lecaps, operar lecaps, invertir en leliq, rendimiento leliq, adquirir leliq, operar leliq, TX21, TX23, TX24, TX26, GD29, GD30, GD35, GD38, GD41, AL29, AL30, AL35, AE38, AL41, GLOBAL 2035, GLOBAL 2030, BONOS DEL TESORO, ARBITRAJE DE BONOS, CER, LETRAS, AJUSTE POR INFLACION, adquirir acciones, comprar acciones, operar acciones, invertir en acciones, invertir en acciones, rendimiento de acciones, simulador de fondos, comprar fondos, operar fondos, comprar fondos comunes de inversión, rendimiento fondos comunes de inversión, adquirir fondos, invertir en fondos, rendimiento fondos, fondos comunes de inversión, adquirir fondos comunes de inversión, invertir en fondos comunes de inversión, operar fondos comunes de inversión, operar fci, rendimiento fci,  fondos fima, FCI renta fija, FCI renta variable, FCI renta mixta, FCI Money Market, FCI Retorno total, diversificar ahorros, fondos de adcap, fondos de allaria, fondos de balanz, fondos de cohen, fondos de consiltatio, fondos de delta, fondos de galicia, fondos de galileo, fondos de industrial, fondos de mariva, fondos de megainver, fondos de SBS, fondos de Schroeders, fondos de zofigen, fondos CER, FCI dolar linked, FCI en pesos, FCI en dolares, gestion activa, gestion pasiva, cuotapartes de un fci, liquidez, patrimonio de un FCI, diversificar cartera, diversificar inversiones, diversificar ahorros, proteger mis ahorros, inversiones conservadores, invertir en dolar mep, rendimiento dolar mep, cotizacion dolar mep, dolar mep, dolar mep precio, comprar dolar mep, dolar bolsa, como compro dolar mep, que es dolar mep. operar dólar mep, operar dolar bolsa, comprar dolar bolsa, ahorros dolarizados, dolarizar ahorros, ppi, portfolio personal, portfolio personal inversiones, invertir en, ppi global, abri tu cuenta online, pp inversiones, etfs, cedears, ganar dinero desde casa, rendimiento cedears, invertir en plazo fijo, fondos balanz, abri tu cuenta online, simulador de inversiones,">
+	<meta name="description"
+		content="Las Mejores Herramientas de Análisis y Asesoramiento On Demand. Abrí tu Cuenta Online! Poné a Trabajar tu Dinero y Ganá más que con un Plazo Fijo. Abrí tu Cuenta Online! Tecnología. Mantenimiento Sin Costo. Increíbles Oportunidades. Información del Mercado.">
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> <!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-N9MG2M4');</script>
+	<!-- End Google Tag Manager -->
+	<!-- Google Fonts -->
+	<link href="css/css2.css" rel="stylesheet" type="text/css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,800italic,800,700italic,700,600italic,600,400italic,300' rel='stylesheet' type='text/css'> -->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>	 -->
+	<script src="js/1014657526.js"></script>
+	<style type="text/css">
+		#IIT-signUpForm.IIT-signUpForm {
+			font-family: Arial, 'Arial MT', 'Arial Unicode MS', Helvetica, sans-serif;
+			color: #ffffff;
+			font-size: 11px;
+			background-color: #00AEEF;
+			border: none #ADB7BF;
+			padding: 5px 10px;
+			width: 200px;
+			overflow: hidden;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm * {
+			color: #ffffff;
+			font-size: 11px;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm a {
+			color: #0088CC;
+			text-decoration: none;
+			font-style: normal;
+			font-weight: normal;
+			word-wrap: break-word;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm input,
+		#IIT-signUpForm.IIT-signUpForm select {
+			font-family: Arial, 'Arial MT', 'Arial Unicode MS', Helvetica, sans-serif;
+			font-size: 11px;
+			border: 1px solid #ADB7BF;
+			width: 188px;
+			padding: 3px 5px;
+			color: #000;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm select option {
+			font-family: Arial, 'Arial MT', 'Arial Unicode MS', Helvetica, sans-serif;
+			font-size: 11px;
+			color: #000;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm select {
+			height: 24px;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm input:focus,
+		#IIT-signUpForm.IIT-signUpForm select:focus {
+			outline: none;
+			/* remove webkit focus ring */
+		}
+
+		#IIT-signUpForm.IIT-signUpForm label {
+			display: block;
+			margin: 8px 0 4px 0;
+			width: 200px;
+			overflow: hidden;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm div:first-child label {
+			margin-top: 3px;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm input[type=hidden] {
+			display: none;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm select {
+			width: 200px;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm .IIT-group ul,
+		#IIT-signUpForm.IIT-signUpForm .IIT-group ol {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm .IIT-group li {
+			margin: 0 0 3px 0;
+			padding: 0;
+			position: relative;
+			*width: 100%;
+			/* ie6 */
+		}
+
+		#IIT-signUpForm.IIT-signUpForm .IIT-disclaimer input,
+		#IIT-signUpForm.IIT-signUpForm .IIT-group ul input {
+			width: auto;
+			display: inline;
+			position: absolute;
+			border: none;
+			left: 0;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm .IIT-disclaimer label,
+		#IIT-signUpForm.IIT-signUpForm .IIT-group ul label {
+			*display: inline-block;
+			/* ie7. ie6 doesn't need and doesn't support this */
+			margin: 5px 0 0 23px;
+			width: 177px;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm .IIT-disclaimer {
+			position: relative;
+			*width: 100%;
+			/* ie6 */
+			top: 10px;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm .IIT-disclaimer ul {
+			list-style: disc;
+			margin: 10px 30px;
+			padding: 0px;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm .IIT-disclaimer ol {
+			list-style: decimal;
+			margin: 10px 30px;
+			padding: 0px;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm .IIT-disclaimer p {
+			margin: 0 0 1em 0;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm .IIT-button {
+			margin: 18px 0 4px 0;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm .IIT-button input {
+			background-color: #ffffff;
+			color: #00AEEF;
+			border-color: #ffffff;
+			width: 200px;
+		}
+
+		/* Errors */
+		#IIT-signUpForm.IIT-signUpForm .errorFieldContainer * {
+			color: #f00;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm .errorField {
+			background-color: #fdd;
+			border-color: #f00;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm .errorMessage {
+			color: #f00;
+			margin-bottom: 10px;
+		}
+
+		/* Done page */
+		#IIT-signUpForm.IIT-signUpForm #IIT-donepage h2 {
+			margin: 1em 0;
+			font-size: 14px;
+			font-weight: bold;
+			color: #000;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm #IIT-donepage p {
+			margin: 1em 0;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm #IIT-donepage ul {
+			list-style: disc;
+			margin: 1em 0;
+			padding: 0;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm #IIT-donepage ol {
+			margin: 1em 0;
+			padding: 0;
+		}
+
+		#IIT-signUpForm.IIT-signUpForm #IIT-donepage li {
+			margin-left: 20px;
+			padding-left: 0;
+		}
+
+		/* Quirks mode */
+		.quirks#IIT-signUpForm {
+			width: 222px;
+			/* ensure box-sizing in quirks for new browsers. */
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			-ms-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		.quirks#IIT-signUpForm input,
+		.quirks#IIT-signUpForm select {
+			width: 200px;
+		}
+
+		.quirks#IIT-signUpForm .IIT-group li,
+		.quirks#IIT-signUpForm .IIT-disclaimer {
+			width: 100%;
+		}
+
+		.quirks#IIT-signUpForm .IIT-disclaimer input {
+			width: auto;
+		}
+
+		/*Reset*/
+		#IIT-signUpForm input,
+		#IIT-signUpForm select,
+		#IIT-signUpForm label,
+		#IIT-signUpForm div,
+		#IIT-signUpForm form,
+		#IIT-signUpForm ul,
+		#IIT-signUpForm li,
+		#IIT-signUpForm h2,
+		#IIT-signUpForm a,
+		#IIT-signUpForm #IIT-donepage input,
+		#IIT-signUpForm #IIT-donepage select,
+		#IIT-signUpForm #IIT-donepage label,
+		#IIT-signUpForm #IIT-donepage div,
+		#IIT-signUpForm #IIT-donepage form,
+		#IIT-signUpForm #IIT-donepage ul,
+		#IIT-signUpForm #IIT-donepage li,
+		#IIT-signUpForm #IIT-donepage h2,
+		#IIT-signUpForm #IIT-donepage a {
+			width: auto;
+			height: auto;
+			border: none;
+			margin: 0;
+			padding: 0;
+			font-family: inherit;
+			font-size: 11px;
+			font-weight: normal;
+			overflow: visible;
+			-moz-border-radius: 0;
+			-o-border-radius: 0;
+			-webkit-border-radius: 0;
+			border-radius: 0;
+			letter-spacing: normal;
+			word-spacing: normal;
+			/*line-height: normal;*/
+			text-transform: none;
+			text-indent: 0px;
+			text-shadow: none;
+			background: none;
+		}
+
+		#IIT-signUpForm #IIT-donepage a td {
+			font-size: 11px;
+		}
+
+		#IIT-signUpForm input[type=text],
+		#IIT-signUpForm input[type=email],
+		#IIT-signUpForm input[type=password],
+		#IIT-signUpForm select,
+		#IIT-signUpForm #IIT-donepage input[type=text],
+		#IIT-signUpForm #IIT-donepage input[type=password],
+		#IIT-signUpForm #IIT-donepage select {
+			background: #FFFFFF !important;
+			/*color: #000 !important;*/
+		}
+
+		#IIT-signUpForm input,
+		#IIT-signUpForm select {
+			margin: 2px 0;
+			pading 1px 0;
+		}
+
+		#IIT-signUpForm input[type="radio"] {
+			margin: 3px 3px 0px 5px;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) --> <noscript><iframe src="ns.html" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript> <!-- End Google Tag Manager (noscript) -->
+	<!-- PRELOADER		============================================= -->
+	<!-- <div class="animationload"> -->
+	<!-- <div class="loader"></div> -->
+	<!-- </div> -->
+	<!-- HEADER		============================================= -->
+	<header id="header">
+		<div class="navbar navbar-fixed-top">
+			<div class="container">
+				<!-- Navigation Bar -->
+				<div class="navbar-header">
+					<!-- Responsive Menu Button --> <button type="button" id="nav-toggle" class="navbar-toggle"
+						data-toggle="collapse" data-target="#navigation-menu"> <span class="sr-only">Toggle
+							navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span> </button> <!-- Logo Image --> <a class="navbar-brand" href="#"><img
+							src="images/logo.png" alt="logo" role="banner"></a>
+				</div> <!-- End Navigation Bar -->
+				<!-- Navigation Menu -->
+				<nav id="navigation-menu" class="collapse navbar-collapse" role="navigation" style>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a id="GoToHome" class="selected-nav" href="#intro">Home</a></li>
+						<li><a id="GoToAbout" href="#services">Abrir una cuenta</a></li>
+						<li><a id="GoToWorks" href="#about">Quienes somos</a></li>
+						<li><a id="GoToTeam" href="#features">Beneficios </a></li>
+						<li><a id="GoToPricing" href="#team">Equipo</a></li>
+						<!-- <li><a id="GoToBlog" href="#testimonials">Testimonios</a></li>									 -->
+						<li><a id="GoToContacts" href="#blog">Tutoriales</a></li>
+					</ul>
+				</nav> <!-- End Navigation Menu -->
+			</div> <!-- End container -->
+		</div> <!-- End navbar fixed top  -->
+	</header> <!-- END HEADER -->
+	<!-- CONTENT WRAPPER		============================================= -->
+	<div id="content_wrapper">
+		<!-- INTRO			============================================= -->
+		<section id="intro" style="background-image: url(&#x27;images/PPIGlobal_Landing.png&#x27;)">
+			<div class="overlay">
+				<div class="container">
+					<div id="intro_content" class="row">
+						<!-- INTRO TEXT -->
+						<div class="col-md-7">
+							<div class="intro_text">
+								<h1>¿Querés invertir en el mundo?</h1>
+								<h2>Hacelo con PPI Global, desde tu cuenta local </h2>
+								<p>Miles de oportunidades –acciones, bonos, y más- de los principales mercados
+									internacionales. Comenzá hoy, e invertí en el mundo desde la palma de tu mano. </p>
+							</div> <!-- INTRO BUTTONS -->
+							<div class="intro_buttons"> <a class="btn btn-theme"
+									href="https://cuenta.portfoliopersonal.com/abrirCuenta">Abrí tu cuenta</a>
+								<!-- <a class="btn btn-theme" href="https://www.portfoliopersonal.com/">Descubrí más</a>									 -->
+							</div>
+						</div> <!-- END TEXT -->
+						<!-- <!-- INTRO REGISTER FORM -->
+						<!-- <div id="intro_form" class="col-md-5 form_register text-center"> -->
+						<!-- <!-- Register Form -->
+						<!-- <form action="contact.php" name="contactform" class="row" method="post"> -->
+						<!-- <h4>Sign up to find out more!</h4> -->
+						<!-- <div id="input_name" class="col-md-12"> -->
+						<!-- <input id="name" class="form-control" type="text" name="first_name" placeholder="Full Name">  -->
+						<!-- </div> -->
+						<!-- <div id="input_email" class="col-md-12"> -->
+						<!-- <input id="email" class="form-control" type="text" name="email" placeholder="Enter your email">  -->
+						<!-- </div> -->
+						<!-- <div id="input_phone" class="col-md-12"> -->
+						<!-- <input id="phone" class="form-control" type="text" name="phone" placeholder="Phone Number">  -->
+						<!-- </div>	 -->
+						<!-- <p>We will never spam you, or sell your email to third parties. All fields are required</p> -->
+						<!-- <!-- Submit Button -->
+						<!-- <div id="form_register_btn" class="text-center"> -->
+						<!-- <input class="btn btn-theme" type="submit" value="Register Now" id="submit"> -->
+						<!-- </div>   -->
+						<!-- </form>	<!-- End Register Form -->
+						<!-- </div>    <!-- END INTRO REGISTER FORM -->
+					</div> <!-- End Intro Content -->
+				</div> <!-- End container -->
+			</div> <!-- End overlay-->
+		</section> <!-- END INTRO -->
+		<!-- CONTACT-INFO			============================================= -->
+		<section id="contact-info">
+			<div class="container">
+				<!-- SECTION TITLE -->
+				<div class="row">
+					<div class="col-sm-12 titlebar">
+						<h3>Tenés el mundo en tus manos</h3>
+						<h2>Invertir a nivel global nunca fue tan fácil</h2>
+					</div>
+				</div>
+				<div class="row">
+					<!-- Office Location -->
+					<div class="col-xs-6 col-sm-6 col-md-3 contact-info text-center triggerAnimation animated"
+						data-animate="bounceIn"> <i class="fa fa-globe"></i>
+						<h4 class="contact_title">Más opciones</h4>
+						<p class="contact_description">Accedé a miles de oportunidades -bonos, acciones y más- de las
+							Bolsas de Nueva York, Hong Kong, Londres, y muchas otras.</p>
+					</div> <!-- Call Us -->
+					<div class="col-xs-6 col-sm-6 col-md-3 contact-info text-center triggerAnimation animated"
+						data-animate="bounceIn"> <i class="fa fa-check"></i>
+						<h4 class="contact_title">Más simple</h4>
+						<p class="contact_description"> Diseño amigable e intuitivo para que analices, planifiques y
+							operes cualquier instrumento, en pocos clicks y con toda la información a tu alcance.</p>
+					</div> <!-- Email Address -->
+					<div class="col-xs-6 col-sm-6 col-md-3 contact-info text-center triggerAnimation animated"
+						data-animate="bounceIn"> <i class="fa fa-fighter-jet"></i>
+						<h4 class="contact_title">Más rápido</h4>
+						<p class="contact_description">Operá en tiempo real, chequeá cotizaciones y realizá
+							transacciones en el mercado que elijas desde tu cuenta comitente.</p>
+					</div> <!-- Working Hours -->
+					<div class="col-xs-6 col-sm-6 col-md-3 contact-info text-center triggerAnimation animated"
+						data-animate="bounceIn"> <i class="fa fa-laptop"></i>
+						<h4 class="contact_title">Más tecnología</h4>
+						<p class="contact_description">Innovación aplicada a tus inversiones para que puedas operar de
+							forma ágil, segura e intuitiva, con las más avanzadas herramientas de análisis.</p>
+					</div>
+				</div> <!-- End row -->
+			</div> <!-- End container -->
+		</section> <!-- END CONTACT-INFO -->
+		<section id="demo" data-target="demo">
+			<div class="container">
+				<div class="col-sm-12 titlebar">
+					<h3>Completá el formulario y recibirás los datos de acceso a la Demo en tu mail</h3>
+					<h2>Descubrí nuestra plataforma</h2>
+				</div>
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<div id="form">
+						<form id="IIT-signUpForm" class="IIT-signUpForm" action="#" dir="ltr"
+							onsubmit="return handleSubmit(event)"> <input type="hidden" name="__profileid"
+								value="c66b17f7-7eb9-4274-aba6-bba85ff8a704"> <input type="hidden" name="__formversion"
+								value="0"> <input type="hidden" name="__language" value="es"> <input type="hidden"
+								name="__callback" value="IitSignUpFormhandleResponse">
+							<div class="IIT-field IIT-text"> <label for="IIT-field-1"> <span
+										class="IIT-label-text">Nombre y Apellido</span>:<span class="IIT-mandatory">
+										*</span> </label> <input id="IIT-field-1" type="text" name="clientname"> </div>
+							<div class="IIT-field IIT-text"> <label for="IIT-field-2"> <span
+										class="IIT-label-text">E-mail</span>:<span class="IIT-mandatory"> *</span>
+								</label> <input id="IIT-field-2" type="text" name="email"> </div>
+							<div class="IIT-field IIT-button"> <input id="IIT-button-submit" type="submit"
+									value="Enviar"> </div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section> <!-- SERVICES			============================================= -->
+		<section id="services">
+			<div class="container">
+				<!-- <!-- SERVICE IMAGE -->
+				<!-- <div id="services_image" class="col-md-12 text-center animated" data-animation="fadeInUp" data-animation-delay="300"> -->
+				<!-- <img class="img-responsive" src="img/thumbs/features-image.jpg" alt="services_image" />	 -->
+				<!-- </div>					 -->
+				<!-- </div>	 -->
+				<!-- SECTION TITLE -->
+				<div class="row">
+					<div class="col-sm-12 titlebar">
+						<h3>Empezá ahora</h3>
+						<h2>Abrí tu cuenta de Inversiones PPI</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<!-- SERVICE BOX -->
+						<div class="service-box animated" data-animation="fadeInUp" data-animation-delay="300">
+							<h4><i class="fa fa-mobile"></i>Apertura online</h4>
+							<p>En sólo unos pocos pasos. </p>
+						</div> <!-- SERVICE BOX -->
+						<div class="service-box animated" data-animation="fadeInUp" data-animation-delay="500">
+							<h4><i class="fa fa-check"></i>Mínimos requisitos. </h4>
+							<p>Simple y rápido.</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<!-- SERVICE BOX -->
+						<div class="service-box animated" data-animation="fadeInUp" data-animation-delay="300">
+							<h4><i class="fa fa-cogs"></i>Miles de alternativas de inversión</h4>
+							<p>Oportunidades en Argentina y en el mundo.</p>
+						</div> <!-- SERVICE BOX -->
+						<div class="service-box animated" data-animation="fadeInUp" data-animation-delay="500">
+							<h4><i class="fa fa-area-chart"></i>La mejor información y herramientas</h4>
+							<p>Armá tu propio plan de inversiones.</p>
+						</div>
+					</div>
+				</div> <!-- SERVICE BUTTONS -->
+				<div class="row">
+					<div id="service-buttons" class="col-md-12 text-center"> <a
+							href="https://portfoliopersonal.com/AbrirCuenta" class="btn btn-theme animated"
+							data-animation="bounceIn" data-animation-delay="600"> Comenzá a invertir</a> </div>
+				</div>
+			</div> <!-- End container -->
+		</section> <!-- END SERVICES -->
+		<!-- STATISTIC BANNER			============================================= -->
+		<div id="statistic_banner" style="background-image: url(&#x27;images/statistic-banner.jpg&#x27;)">
+			<div class="container">
+				<!-- SECTION TITLE -->
+				<div class="row">
+					<div class="col-sm-12 titlebar">
+						<h3>Conocenos</h3>
+						<h2>Algunos datos sobre nosotros</h2>
+					</div>
+				</div> <!-- STATISTIC HOLDER -->
+				<div id="statistic-holder" class="row">
+					<!-- STATISTIC BLOCK -->
+					<div class="col-xs-3 col-sm-3 col-md-3 statistic-block animated" data-animation="bounceIn"
+						data-animation-delay="300"> <span class="statistic-number1">+<div class="statistic-number"
+								style="display:inline-block;">20</div></span>
+						<div class="statistic-text">años de experiencia</div>
+					</div> <!-- STATISTIC BLOCK -->
+					<div class="col-xs-3 col-sm-3 col-md-3 statistic-block animated" data-animation="bounceIn"
+						data-animation-delay="400"> <span class="statistic-number1">+<div class="statistic-number"
+								style="display:inline-block;">30000</div></span>
+						<div class="statistic-text">alternativas </div>
+					</div> <!-- STATISTIC BLOCK -->
+					<div class="col-xs-3 col-sm-3 col-md-3 statistic-block animated" data-animation="bounceIn"
+						data-animation-delay="500"> <span class="statistic-number1">+<div class="statistic-number"
+								style="display:inline-block;">27000</div></span>
+						<div class="statistic-text">clientes</div>
+					</div> <!-- STATISTIC BLOCK -->
+					<div class="col-xs-3 col-sm-3 col-md-3 statistic-block animated" data-animation="bounceIn"
+						data-animation-delay="600"> <span class="statistic-number1">+<div class="statistic-number"
+								style="display:inline-block;">5000</div></span>
+						<div class="statistic-text">órdenes diarias</div>
+					</div>
+				</div> <!-- END STATISTIC HOLDER -->
+			</div> <!-- End container -->
+		</div> <!-- END STATISTIC BANNER -->
+		<!-- ABOUT			============================================= -->
+		<section id="about">
+			<div class="container">
+				<!-- SECTION TITLE -->
+				<div class="row">
+					<div class="col-sm-12 titlebar">
+						<h3>Nuestra historia</h3>
+						<h2>¿Quienes somos?</h2>
+					</div>
+				</div> <!-- TABS HOLDER -->
+				<div id="tabs-holder" class="row">
+					<!-- TABS -->
+					<div class="col-md-7">
+						<!-- Nav Tabs -->
+						<ul class="nav nav-tabs" role="tablist">
+							<li class="active animated" data-animation="bounceIn" data-animation-delay="300"><a
+									href="#tab_1" role="tab" data-toggle="tab">Sobre Nosotros</a></li>
+							<li class=" animated" data-animation="bounceIn" data-animation-delay="400"><a href="#tab_2"
+									role="tab" data-toggle="tab">Por qué elegirnos</a></li>
+						</ul> <!-- Tab Panes -->
+						<div class="tab-content">
+							<!-- TAB #1 -->
+							<div id="tab_1" class="tab-pane active">
+								<!-- Tab #1 Description -->
+								<p>Somos PPI, una de las compañías líderes de inversión financiera de Argentina. Estamos
+									hace más de 20 años brindando el mejor servicio, y acompañando a nuestros clientes
+									para que tomen decisiones inteligentes a la hora de invertir. </p>
+								<!-- Tab #1 Buttons --> <a
+									href="https://www.portfoliopersonal.com/Nosotros/NuestraHistoria"
+									class="btn btn-theme animated" data-animation="bounceIn"
+									data-animation-delay="300">Conocé mas</a>
+							</div> <!-- END TAB #1 -->
+							<!-- TAB #2 -->
+							<div id="tab_2" class="tab-pane">
+								<!-- Tab #2 Description -->
+								<p>&gt; Tenemos la plataforma más completa, poderosa e innovadora. </p>
+								<p>&gt; Te ofrecemos invertir en Argentina y en el mundo con PPI Global</p>
+								<p>&gt; Tenemos el Supermercado de FCI más grande del mercado</p>
+								<p>&gt; Desarrollamos soluciones de inversión a medida de cada uno de nuestros clientes
+								</p> <!-- Tab #2 Buttons --> <a
+									href="https://www.portfoliopersonal.com/Pilares/Tecnologia"
+									class="btn btn-theme animated" data-animation="bounceIn"
+									data-animation-delay="300">Conocé mas</a>
+							</div> <!-- END TAB #2 -->
+						</div> <!-- End Tab Panes -->
+					</div> <!-- END TABS -->
+					<!-- TABS HOLDER IMAGE -->
+					<div class="col-md-5 text-center animated" data-animation="fadeInRight" data-animation-delay="600">
+						<img class="img-responsive" src="images/nosotros_0.png" alt="about-image"> </div>
+				</div> <!-- END TABS HOLDER -->
+			</div> <!-- End container -->
+		</section> <!-- END ABOUT -->
+		<!-- FEATURES			============================================= -->
+		<section id="features">
+			<div class="container">
+				<!-- SECTION TITLE -->
+				<div class="row">
+					<div class="col-sm-12 titlebar">
+						<h3>TUS OPORTUNIDADES</h3>
+						<h2>Beneficios que brinda PPI</h2>
+					</div>
+				</div>
+				<div class="row">
+					<!-- FEATURE BOX -->
+					<div class="col-sm-6 col-md-6 animated" data-animation="fadeInLeft" data-animation-delay="300">
+						<div class="features-box">
+							<!-- Feature Icon -->
+							<div class="icon-box img-circle"> <i class="fa fa-desktop"></i> </div>
+							<!-- Feature Box Text -->
+							<div class="features-text">
+								<h4>Multiplataforma</h4>
+								<p>Opera desde donde quieras, cuando quieras y en tiempo real. </p>
+							</div>
+						</div>
+					</div> <!-- END FEATURE BOX -->
+					<!-- FEATURE BOX -->
+					<div class="col-sm-6 col-md-6 animated" data-animation="fadeInRight" data-animation-delay="300">
+						<div class="features-box">
+							<!-- Feature Icon -->
+							<div class="icon-box img-circle"> <i class="fa fa-globe"></i> </div>
+							<!-- Feature Box Text -->
+							<div class="features-text">
+								<h4>Productos</h4>
+								<p>Todas las opciones de inversión locales y del mundo a un clic.</p>
+							</div>
+						</div>
+					</div> <!-- END FEATURE BOX -->
+				</div> <!-- End row -->
+				<div class="row">
+					<!-- FEATURE BOX -->
+					<div class="col-sm-6 col-md-6 animated" data-animation="fadeInLeft" data-animation-delay="500">
+						<div class="features-box">
+							<!-- Feature Icon -->
+							<div class="icon-box img-circle"> <i class="fa fa-user"></i> </div>
+							<!-- Feature Box Text -->
+							<div class="features-text">
+								<h4>Servicios</h4>
+								<p>Soluciones estrategias para cada perfil de cliente: individuos, corporativos e
+									institucionales. </p>
+							</div>
+						</div>
+					</div> <!-- END FEATURE BOX -->
+					<!-- FEATURE BOX -->
+					<div class="col-sm-6 col-md-6 animated" data-animation="fadeInRight" data-animation-delay="500">
+						<div class="features-box">
+							<!-- Feature Icon -->
+							<div class="icon-box img-circle"> <i class="fa fa-area-chart"></i> </div>
+							<!-- Feature Box Text -->
+							<div class="features-text">
+								<h4>Research</h4>
+								<p>La mejor información para maximizar tus oportunidades de inversión. </p>
+							</div>
+						</div>
+					</div> <!-- END FEATURE BOX -->
+				</div> <!-- End row -->
+				<div class="row">
+					<!-- FEATURE BOX -->
+					<div class="col-sm-6 col-md-6 animated" data-animation="fadeInLeft" data-animation-delay="700">
+						<div class="features-box">
+							<!-- Feature Icon -->
+							<div class="icon-box img-circle"> <i class="fa fa-cogs"></i> </div>
+							<!-- Feature Box Text -->
+							<div class="features-text">
+								<h4>Herramientas</h4>
+								<p>Todo lo necesario para analizar y maximizar el resultado de tus inversiones. </p>
+							</div>
+						</div>
+					</div> <!-- END FEATURE BOX -->
+					<!-- FEATURE BOX -->
+					<div class="col-sm-6 col-md-6 animated" data-animation="fadeInRight" data-animation-delay="700">
+						<div class="features-box">
+							<!-- Feature Icon -->
+							<div class="icon-box"> <i class="fa fa-suitcase"></i> </div> <!-- Feature Box Text -->
+							<div class="features-text">
+								<h4>Plan de inversión</h4>
+								<p>Te ayudamos a armar tu plan acorde a tus objetivos e intereses. </p>
+							</div>
+						</div>
+					</div> <!-- END FEATURE BOX -->
+				</div> <!-- End row -->
+			</div><!-- End container -->
+		</section> <!-- END FEATURES -->
+		<!-- TEAM			============================================= -->
+		<section id="team">
+			<div class="container">
+				<!-- SECTION TITLE -->
+				<div class="row">
+					<div class="col-sm-12 titlebar">
+						<h3>Nuestro Equipo</h3>
+						<h2>Nuestros Profesionales</h2>
+					</div>
+				</div> <!-- TEAM MEMBERS HOLDER -->
+				<div class="row team_members_wrapper">
+					<!-- TEAM MEMBER #1 -->
+					<div class="col-xs-6 col-sm-6 col-md-3 animated" data-animation="fadeInRight"
+						data-animation-delay="500">
+						<div class="team-member text-center">
+							<!-- Team Member Photo  -->
+							<div class="img-block"> <img class="img-responsive" src="images/nosotros_1.jpg"
+									alt="team_foto"> </div> <!-- Team Member Meta  -->
+							<div class="team-img-meta">
+								<h5>Paula Premrou</h5>
+								<h6>Presidente</h6>
+								<!-- <p>Licenciada en Economía de la Universidad Católica Argentina (UCA). Más de 25 años de experiencia en el mercado de capitales.</p>	 -->
+							</div> <!-- Team Member Social Icons  -->
+							<div class="team-socials">
+								<ul class="team-member-socials clearfix">
+									<li><a class="page_social ico_linkedin" target="_blank"
+											href="https://www.linkedin.com/in/paula-premrou-b5601b117/"><i
+												class="fa fa-linkedin"></i></a></li>
+									<!-- <li><a class="page_social ico_facebook" href="#"><i class="fa fa-facebook"></i></a></li> -->
+									<!-- <li><a class="page_social ico_twitter" href="#"><i class="fa fa-twitter"></i></a></li> -->
+									<!-- <li><a class="page_social ico_google_plus" href="#"><i class="fa fa-google-plus"></i></a></li> -->
+									<!-- <li><a class="page_social ico_behance" href="#"><i class="fa fa-behance"></i></a></li> -->
+									<!--											<li><a class="page_social ico_linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>																		<li><a class="page_social ico_digg" href="#"><i class="fa fa-digg"></i></a></li>										<li><a class="page_social ico_deviantart" href="#"><i class="fa fa-deviantart"></i></a></li>										<li><a class="page_social ico_envelope" href="#"><i class="fa fa-envelope-square"></i></a></li>																	<li><a class="page_social ico_delicious" href="#"><i class="fa fa-delicious"></i></a></li>																		<li><a class="page_social ico_dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>										<li><a class="page_social ico_instagram" href="#"><i class="fa fa-instagram"></i></a></li>										<li><a class="page_social ico_pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>											<li><a class="page_social ico_dropbox" href="#"><i class="fa fa-dropbox"></i></a></li>										<li><a class="page_social ico_skype" href="#"><i class="fa fa-skype"></i></a></li>										<li><a class="page_social ico_youtube" href="#"><i class="fa fa-youtube"></i></a></li>										<li><a class="page_social ico_tumblr" href="#"><i class="fa fa-tumblr"></i></a></li>										<li><a class="page_social ico_vimeo" href="#"><i class="fa fa-vimeo-square"></i></a></li>										<li><a class="page_social ico_flickr" href="#"><i class="fa fa-flickr"></i></a></li>										<li><a class="page_social ico_github" href="#"><i class="fa fa-github-alt"></i></a></li>										<li><a class="page_social ico_renren" href="#"><i class="fa fa-renren"></i></a></li>										<li><a class="page_social ico_vk" href="#"><i class="fa fa-vk"></i></a></li>										<li><a class="page_social ico_xing" href="#"><i class="fa fa-xing"></i></a></li>										<li><a class="page_social ico_weibo" href="#"><i class="fa fa-weibo"></i></a></li>										<li><a class="page_social ico_rss" href="#"><i class="fa fa-rss"></i></a></li>																		-->
+								</ul>
+							</div>
+						</div>
+					</div> <!-- END TEAM MEMBER #1 -->
+					<!-- TEAM MEMBER #2 -->
+					<div class="col-xs-6 col-sm-6 col-md-3 animated" data-animation="fadeInLeft"
+						data-animation-delay="500">
+						<div class="team-member text-center">
+							<!-- Team Member Photo  -->
+							<div class="img-block"> <img class="img-responsive" src="images/nosotros_2.jpg"
+									alt="team_foto"> </div> <!-- Team Member Meta  -->
+							<div class="team-img-meta">
+								<h5>Miguel Canale</h5>
+								<h6>Director</h6>
+								<!-- <p>Desde el 2009, se desempeñó como Director de INTL CIBSA (ex Compañía Inversora Bursátil de Bolsa). Hoy, es Director de PP Inversiones.</p>	 -->
+							</div> <!-- Team Member Social Icons  -->
+							<div class="team-socials">
+								<ul class="team-member-socials clearfix">
+									<li><a class="page_social ico_linkedin" target="_blank"
+											href="https://www.linkedin.com/in/miguel-canale-5b297473/"><i
+												class="fa fa-linkedin"></i></a></li>
+									<!-- <li><a class="page_social ico_facebook" href="#"><i class="fa fa-facebook"></i></a></li> -->
+									<!-- <li><a class="page_social ico_twitter" href="#"><i class="fa fa-twitter"></i></a></li> -->
+									<!-- <li><a class="page_social ico_google_plus" href="#"><i class="fa fa-google-plus"></i></a></li> -->
+									<!-- <li><a class="page_social ico_behance" href="#"><i class="fa fa-behance"></i></a></li> -->
+									<!--											<li><a class="page_social ico_linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>																		<li><a class="page_social ico_digg" href="#"><i class="fa fa-digg"></i></a></li>										<li><a class="page_social ico_deviantart" href="#"><i class="fa fa-deviantart"></i></a></li>										<li><a class="page_social ico_envelope" href="#"><i class="fa fa-envelope-square"></i></a></li>																	<li><a class="page_social ico_delicious" href="#"><i class="fa fa-delicious"></i></a></li>																		<li><a class="page_social ico_dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>										<li><a class="page_social ico_instagram" href="#"><i class="fa fa-instagram"></i></a></li>										<li><a class="page_social ico_pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>											<li><a class="page_social ico_dropbox" href="#"><i class="fa fa-dropbox"></i></a></li>										<li><a class="page_social ico_skype" href="#"><i class="fa fa-skype"></i></a></li>										<li><a class="page_social ico_youtube" href="#"><i class="fa fa-youtube"></i></a></li>										<li><a class="page_social ico_tumblr" href="#"><i class="fa fa-tumblr"></i></a></li>										<li><a class="page_social ico_vimeo" href="#"><i class="fa fa-vimeo-square"></i></a></li>										<li><a class="page_social ico_flickr" href="#"><i class="fa fa-flickr"></i></a></li>										<li><a class="page_social ico_github" href="#"><i class="fa fa-github-alt"></i></a></li>										<li><a class="page_social ico_renren" href="#"><i class="fa fa-renren"></i></a></li>										<li><a class="page_social ico_vk" href="#"><i class="fa fa-vk"></i></a></li>										<li><a class="page_social ico_xing" href="#"><i class="fa fa-xing"></i></a></li>										<li><a class="page_social ico_weibo" href="#"><i class="fa fa-weibo"></i></a></li>										<li><a class="page_social ico_rss" href="#"><i class="fa fa-rss"></i></a></li>																		-->
+								</ul>
+							</div>
+						</div>
+					</div> <!-- END TEAM MEMBER #2 -->
+					<!-- TEAM MEMBER #3 -->
+					<div class="col-xs-6 col-sm-6 col-md-3 animated" data-animation="fadeInRight"
+						data-animation-delay="800">
+						<div class="team-member text-center">
+							<!-- Team Member Photo  -->
+							<div class="img-block"> <img class="img-responsive" src="images/nosotros_3.jpg"
+									alt="team_foto"> </div> <!-- Team Member Meta  -->
+							<div class="team-img-meta">
+								<h5>Augusto Posleman</h5>
+								<h6>Director</h6>
+								<!-- <p>Más de 20 años de experiencia en Bancos e instituciones financieras del país desempeñándose dentro del sector comercial. </p>		 -->
+							</div> <!-- Team Member Social Icons  -->
+							<div class="team-socials">
+								<ul class="team-member-socials clearfix">
+									<li><a class="page_social ico_linkedin" target="_blank"
+											href="https://www.linkedin.com/in/augusto-posleman-2bb1a4/"><i
+												class="fa fa-linkedin"></i></a></li>
+									<!--																			<li><a class="page_social ico_facebook" href="#"><i class="fa fa-facebook"></i></a></li>										<li><a class="page_social ico_twitter" href="#"><i class="fa fa-twitter"></i></a></li>										<li><a class="page_social ico_google_plus" href="#"><i class="fa fa-google-plus"></i></a></li>										<li><a class="page_social ico_behance" href="#"><i class="fa fa-behance"></i></a></li>																															<li><a class="page_social ico_linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>																		<li><a class="page_social ico_digg" href="#"><i class="fa fa-digg"></i></a></li>										<li><a class="page_social ico_deviantart" href="#"><i class="fa fa-deviantart"></i></a></li>										<li><a class="page_social ico_envelope" href="#"><i class="fa fa-envelope-square"></i></a></li>																	<li><a class="page_social ico_delicious" href="#"><i class="fa fa-delicious"></i></a></li>																		<li><a class="page_social ico_dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>										<li><a class="page_social ico_instagram" href="#"><i class="fa fa-instagram"></i></a></li>										<li><a class="page_social ico_pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>											<li><a class="page_social ico_dropbox" href="#"><i class="fa fa-dropbox"></i></a></li>										<li><a class="page_social ico_skype" href="#"><i class="fa fa-skype"></i></a></li>										<li><a class="page_social ico_youtube" href="#"><i class="fa fa-youtube"></i></a></li>										<li><a class="page_social ico_tumblr" href="#"><i class="fa fa-tumblr"></i></a></li>										<li><a class="page_social ico_vimeo" href="#"><i class="fa fa-vimeo-square"></i></a></li>										<li><a class="page_social ico_flickr" href="#"><i class="fa fa-flickr"></i></a></li>										<li><a class="page_social ico_github" href="#"><i class="fa fa-github-alt"></i></a></li>										<li><a class="page_social ico_renren" href="#"><i class="fa fa-renren"></i></a></li>										<li><a class="page_social ico_vk" href="#"><i class="fa fa-vk"></i></a></li>										<li><a class="page_social ico_xing" href="#"><i class="fa fa-xing"></i></a></li>										<li><a class="page_social ico_weibo" href="#"><i class="fa fa-weibo"></i></a></li>										<li><a class="page_social ico_rss" href="#"><i class="fa fa-rss"></i></a></li>																		-->
+								</ul>
+							</div>
+						</div>
+					</div> <!-- END TEAM MEMBER #3 -->
+					<!-- TEAM MEMBER #4 -->
+					<div class="col-xs-6 col-sm-6 col-md-3 animated" data-animation="fadeInLeft"
+						data-animation-delay="800">
+						<div class="team-member text-center">
+							<!-- Team Member Photo  -->
+							<div class="img-block"> <img class="img-responsive" src="images/nosotros_4.jpg"
+									alt="team_foto"> </div> <!-- Team Member Meta  -->
+							<div class="team-img-meta">
+								<h5>Lucas Gardiner</h5>
+								<h6>Director</h6>
+								<!-- <p>Licenciado en Economía de la Universidad de Buenos Aires (UBA). MBA del IAE Business School. Actualmente está al frente de la Mesa de Operaciones de PP Inversiones. -->
+								<!-- </p>		 -->
+							</div> <!-- Team Member Social Icons  -->
+							<div class="team-socials">
+								<ul class="team-member-socials clearfix">
+									<li><a class="page_social ico_linkedin" target="_blank"
+											href="https://www.linkedin.com/in/lucas-gardiner-1a6071a/"><i
+												class="fa fa-linkedin"></i></a></li>
+									<!--											<li><a class="page_social ico_facebook" href="#"><i class="fa fa-facebook"></i></a></li>										<li><a class="page_social ico_twitter" href="#"><i class="fa fa-twitter"></i></a></li>										<li><a class="page_social ico_google_plus" href="#"><i class="fa fa-google-plus"></i></a></li>										<li><a class="page_social ico_behance" href="#"><i class="fa fa-behance"></i></a></li>																													<li><a class="page_social ico_linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>																		<li><a class="page_social ico_digg" href="#"><i class="fa fa-digg"></i></a></li>										<li><a class="page_social ico_deviantart" href="#"><i class="fa fa-deviantart"></i></a></li>										<li><a class="page_social ico_envelope" href="#"><i class="fa fa-envelope-square"></i></a></li>																	<li><a class="page_social ico_delicious" href="#"><i class="fa fa-delicious"></i></a></li>																		<li><a class="page_social ico_dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>										<li><a class="page_social ico_instagram" href="#"><i class="fa fa-instagram"></i></a></li>										<li><a class="page_social ico_pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>											<li><a class="page_social ico_dropbox" href="#"><i class="fa fa-dropbox"></i></a></li>										<li><a class="page_social ico_skype" href="#"><i class="fa fa-skype"></i></a></li>										<li><a class="page_social ico_youtube" href="#"><i class="fa fa-youtube"></i></a></li>										<li><a class="page_social ico_tumblr" href="#"><i class="fa fa-tumblr"></i></a></li>										<li><a class="page_social ico_vimeo" href="#"><i class="fa fa-vimeo-square"></i></a></li>										<li><a class="page_social ico_flickr" href="#"><i class="fa fa-flickr"></i></a></li>										<li><a class="page_social ico_github" href="#"><i class="fa fa-github-alt"></i></a></li>										<li><a class="page_social ico_renren" href="#"><i class="fa fa-renren"></i></a></li>										<li><a class="page_social ico_vk" href="#"><i class="fa fa-vk"></i></a></li>										<li><a class="page_social ico_xing" href="#"><i class="fa fa-xing"></i></a></li>										<li><a class="page_social ico_weibo" href="#"><i class="fa fa-weibo"></i></a></li>										<li><a class="page_social ico_rss" href="#"><i class="fa fa-rss"></i></a></li>																		-->
+								</ul>
+							</div>
+						</div>
+					</div> <!-- END TEAM MEMBER #4 -->
+				</div> <!-- END TEAM MEMBERS HOLDER -->
+				<!-- TEAM MEMBERS HOLDER -->
+				<div class="row team_members_wrapper">
+					<!-- TEAM MEMBER #1 -->
+					<div class="col-xs-6 col-sm-6 col-md-3 animated" data-animation="fadeInRight"
+						data-animation-delay="500">
+						<div class="team-member text-center">
+							<!-- Team Member Photo  -->
+							<div class="img-block"> <img class="img-responsive" src="images/nosotros_5.jpg"
+									alt="team_foto"> </div> <!-- Team Member Meta  -->
+							<div class="team-img-meta">
+								<h5>Sabrina Corujo</h5>
+								<h6>Directora</h6>
+								<!-- <p>Licenciada en Economía de la Universidad Católica Argentina (UCA). Más de 25 años de experiencia en el mercado de capitales.</p>	 -->
+							</div> <!-- Team Member Social Icons  -->
+							<div class="team-socials">
+								<ul class="team-member-socials clearfix">
+									<li><a class="page_social ico_linkedin" target="_blank"
+											href="https://www.linkedin.com/in/sabrina-corujo-6512b013/"><i
+												class="fa fa-linkedin"></i></a></li>
+									<!-- <li><a class="page_social ico_facebook" href="#"><i class="fa fa-facebook"></i></a></li> -->
+									<!-- <li><a class="page_social ico_twitter" href="#"><i class="fa fa-twitter"></i></a></li> -->
+									<!-- <li><a class="page_social ico_google_plus" href="#"><i class="fa fa-google-plus"></i></a></li> -->
+									<!-- <li><a class="page_social ico_behance" href="#"><i class="fa fa-behance"></i></a></li> -->
+									<!--											<li><a class="page_social ico_linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>																		<li><a class="page_social ico_digg" href="#"><i class="fa fa-digg"></i></a></li>										<li><a class="page_social ico_deviantart" href="#"><i class="fa fa-deviantart"></i></a></li>										<li><a class="page_social ico_envelope" href="#"><i class="fa fa-envelope-square"></i></a></li>																	<li><a class="page_social ico_delicious" href="#"><i class="fa fa-delicious"></i></a></li>																		<li><a class="page_social ico_dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>										<li><a class="page_social ico_instagram" href="#"><i class="fa fa-instagram"></i></a></li>										<li><a class="page_social ico_pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>											<li><a class="page_social ico_dropbox" href="#"><i class="fa fa-dropbox"></i></a></li>										<li><a class="page_social ico_skype" href="#"><i class="fa fa-skype"></i></a></li>										<li><a class="page_social ico_youtube" href="#"><i class="fa fa-youtube"></i></a></li>										<li><a class="page_social ico_tumblr" href="#"><i class="fa fa-tumblr"></i></a></li>										<li><a class="page_social ico_vimeo" href="#"><i class="fa fa-vimeo-square"></i></a></li>										<li><a class="page_social ico_flickr" href="#"><i class="fa fa-flickr"></i></a></li>										<li><a class="page_social ico_github" href="#"><i class="fa fa-github-alt"></i></a></li>										<li><a class="page_social ico_renren" href="#"><i class="fa fa-renren"></i></a></li>										<li><a class="page_social ico_vk" href="#"><i class="fa fa-vk"></i></a></li>										<li><a class="page_social ico_xing" href="#"><i class="fa fa-xing"></i></a></li>										<li><a class="page_social ico_weibo" href="#"><i class="fa fa-weibo"></i></a></li>										<li><a class="page_social ico_rss" href="#"><i class="fa fa-rss"></i></a></li>																		-->
+								</ul>
+							</div>
+						</div>
+					</div> <!-- END TEAM MEMBER #1 -->
+					<!-- TEAM MEMBER #2 -->
+					<div class="col-xs-6 col-sm-6 col-md-3 animated" data-animation="fadeInLeft"
+						data-animation-delay="500">
+						<div class="team-member text-center">
+							<!-- Team Member Photo  -->
+							<div class="img-block"> <img class="img-responsive" src="images/nosotros_6.jpg"
+									alt="team_foto"> </div> <!-- Team Member Meta  -->
+							<div class="team-img-meta">
+								<h5>Matias Clark Liftenegger</h5>
+								<h6>Director</h6>
+								<!-- <p>Desde el 2009, se desempeñó como Director de INTL CIBSA (ex Compañía Inversora Bursátil de Bolsa). Hoy, es Director de PP Inversiones.</p>	 -->
+							</div> <!-- Team Member Social Icons  -->
+							<div class="team-socials">
+								<ul class="team-member-socials clearfix">
+									<li><a class="page_social ico_linkedin" target="_blank"
+											href="https://www.linkedin.com/in/matiasclarkliftenegger/"><i
+												class="fa fa-linkedin"></i></a></li>
+									<!--												<li><a class="page_social ico_facebook" href="#"><i class="fa fa-facebook"></i></a></li>										<li><a class="page_social ico_twitter" href="#"><i class="fa fa-twitter"></i></a></li>										<li><a class="page_social ico_google_plus" href="#"><i class="fa fa-google-plus"></i></a></li>										<li><a class="page_social ico_behance" href="#"><i class="fa fa-behance"></i></a></li>																													<li><a class="page_social ico_linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>																		<li><a class="page_social ico_digg" href="#"><i class="fa fa-digg"></i></a></li>										<li><a class="page_social ico_deviantart" href="#"><i class="fa fa-deviantart"></i></a></li>										<li><a class="page_social ico_envelope" href="#"><i class="fa fa-envelope-square"></i></a></li>																	<li><a class="page_social ico_delicious" href="#"><i class="fa fa-delicious"></i></a></li>																		<li><a class="page_social ico_dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>										<li><a class="page_social ico_instagram" href="#"><i class="fa fa-instagram"></i></a></li>										<li><a class="page_social ico_pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>											<li><a class="page_social ico_dropbox" href="#"><i class="fa fa-dropbox"></i></a></li>										<li><a class="page_social ico_skype" href="#"><i class="fa fa-skype"></i></a></li>										<li><a class="page_social ico_youtube" href="#"><i class="fa fa-youtube"></i></a></li>										<li><a class="page_social ico_tumblr" href="#"><i class="fa fa-tumblr"></i></a></li>										<li><a class="page_social ico_vimeo" href="#"><i class="fa fa-vimeo-square"></i></a></li>										<li><a class="page_social ico_flickr" href="#"><i class="fa fa-flickr"></i></a></li>										<li><a class="page_social ico_github" href="#"><i class="fa fa-github-alt"></i></a></li>										<li><a class="page_social ico_renren" href="#"><i class="fa fa-renren"></i></a></li>										<li><a class="page_social ico_vk" href="#"><i class="fa fa-vk"></i></a></li>										<li><a class="page_social ico_xing" href="#"><i class="fa fa-xing"></i></a></li>										<li><a class="page_social ico_weibo" href="#"><i class="fa fa-weibo"></i></a></li>										<li><a class="page_social ico_rss" href="#"><i class="fa fa-rss"></i></a></li>																		-->
+								</ul>
+							</div>
+						</div>
+					</div> <!-- END TEAM MEMBER #2 -->
+					<!-- TEAM MEMBER #3 -->
+					<div class="col-xs-6 col-sm-6 col-md-3 animated" data-animation="fadeInRight"
+						data-animation-delay="800">
+						<div class="team-member text-center">
+							<!-- Team Member Photo  -->
+							<div class="img-block"> <img class="img-responsive" src="images/nosotros_7.jpg"
+									alt="team_foto"> </div> <!-- Team Member Meta  -->
+							<div class="team-img-meta">
+								<h5>Matias Roig</h5>
+								<h6>Director</h6>
+								<!-- <p>Más de 20 años de experiencia en Bancos e instituciones financieras del país desempeñándose dentro del sector comercial. </p>		 -->
+							</div> <!-- Team Member Social Icons  -->
+							<div class="team-socials">
+								<ul class="team-member-socials clearfix">
+									<li><a class="page_social ico_linkedin" target="_blank"
+											href="https://www.linkedin.com/in/matias-federico-roig-cfa-27659bb/"><i
+												class="fa fa-linkedin"></i></a></li>
+									<!-- <li><a class="page_social ico_facebook" href="#"><i class="fa fa-facebook"></i></a></li> -->
+									<!-- <li><a class="page_social ico_twitter" href="#"><i class="fa fa-twitter"></i></a></li> -->
+									<!-- <li><a class="page_social ico_google_plus" href="#"><i class="fa fa-google-plus"></i></a></li> -->
+									<!-- <li><a class="page_social ico_behance" href="#"><i class="fa fa-behance"></i></a></li> -->
+									<!--											<li><a class="page_social ico_linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>																		<li><a class="page_social ico_digg" href="#"><i class="fa fa-digg"></i></a></li>										<li><a class="page_social ico_deviantart" href="#"><i class="fa fa-deviantart"></i></a></li>										<li><a class="page_social ico_envelope" href="#"><i class="fa fa-envelope-square"></i></a></li>																	<li><a class="page_social ico_delicious" href="#"><i class="fa fa-delicious"></i></a></li>																		<li><a class="page_social ico_dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>										<li><a class="page_social ico_instagram" href="#"><i class="fa fa-instagram"></i></a></li>										<li><a class="page_social ico_pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>											<li><a class="page_social ico_dropbox" href="#"><i class="fa fa-dropbox"></i></a></li>										<li><a class="page_social ico_skype" href="#"><i class="fa fa-skype"></i></a></li>										<li><a class="page_social ico_youtube" href="#"><i class="fa fa-youtube"></i></a></li>										<li><a class="page_social ico_tumblr" href="#"><i class="fa fa-tumblr"></i></a></li>										<li><a class="page_social ico_vimeo" href="#"><i class="fa fa-vimeo-square"></i></a></li>										<li><a class="page_social ico_flickr" href="#"><i class="fa fa-flickr"></i></a></li>										<li><a class="page_social ico_github" href="#"><i class="fa fa-github-alt"></i></a></li>										<li><a class="page_social ico_renren" href="#"><i class="fa fa-renren"></i></a></li>										<li><a class="page_social ico_vk" href="#"><i class="fa fa-vk"></i></a></li>										<li><a class="page_social ico_xing" href="#"><i class="fa fa-xing"></i></a></li>										<li><a class="page_social ico_weibo" href="#"><i class="fa fa-weibo"></i></a></li>										<li><a class="page_social ico_rss" href="#"><i class="fa fa-rss"></i></a></li>																		-->
+								</ul>
+							</div>
+						</div>
+					</div> <!-- END TEAM MEMBER #3 -->
+					<!-- TEAM MEMBER #4 -->
+					<div class="col-xs-6 col-sm-6 col-md-3 animated" data-animation="fadeInLeft"
+						data-animation-delay="800">
+						<div class="team-member text-center">
+							<!-- Team Member Photo  -->
+							<div class="img-block"> <img class="img-responsive" src="images/nosotros_8.jpg"
+									alt="team_foto"> </div> <!-- Team Member Meta  -->
+							<div class="team-img-meta">
+								<h5>Ingrid Varela</h5>
+								<h6>Directora</h6>
+								<!-- <p>Licenciado en Economía de la Universidad de Buenos Aires (UBA). MBA del IAE Business School. Actualmente está al frente de la Mesa de Operaciones de PP Inversiones. -->
+								<!-- </p>		 -->
+							</div> <!-- Team Member Social Icons  -->
+							<div class="team-socials">
+								<ul class="team-member-socials clearfix">
+									<li><a class="page_social ico_linkedin" target="_blank"
+											href="https://www.linkedin.com/in/ingrid-varela-995782a1/"><i
+												class="fa fa-linkedin"></i></a></li>
+									<!--												<li><a class="page_social ico_facebook" href="#"><i class="fa fa-facebook"></i></a></li>										<li><a class="page_social ico_twitter" href="#"><i class="fa fa-twitter"></i></a></li>										<li><a class="page_social ico_google_plus" href="#"><i class="fa fa-google-plus"></i></a></li>										<li><a class="page_social ico_behance" href="#"><i class="fa fa-behance"></i></a></li>																													<li><a class="page_social ico_linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>																		<li><a class="page_social ico_digg" href="#"><i class="fa fa-digg"></i></a></li>										<li><a class="page_social ico_deviantart" href="#"><i class="fa fa-deviantart"></i></a></li>										<li><a class="page_social ico_envelope" href="#"><i class="fa fa-envelope-square"></i></a></li>																	<li><a class="page_social ico_delicious" href="#"><i class="fa fa-delicious"></i></a></li>																		<li><a class="page_social ico_dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>										<li><a class="page_social ico_instagram" href="#"><i class="fa fa-instagram"></i></a></li>										<li><a class="page_social ico_pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>											<li><a class="page_social ico_dropbox" href="#"><i class="fa fa-dropbox"></i></a></li>										<li><a class="page_social ico_skype" href="#"><i class="fa fa-skype"></i></a></li>										<li><a class="page_social ico_youtube" href="#"><i class="fa fa-youtube"></i></a></li>										<li><a class="page_social ico_tumblr" href="#"><i class="fa fa-tumblr"></i></a></li>										<li><a class="page_social ico_vimeo" href="#"><i class="fa fa-vimeo-square"></i></a></li>										<li><a class="page_social ico_flickr" href="#"><i class="fa fa-flickr"></i></a></li>										<li><a class="page_social ico_github" href="#"><i class="fa fa-github-alt"></i></a></li>										<li><a class="page_social ico_renren" href="#"><i class="fa fa-renren"></i></a></li>										<li><a class="page_social ico_vk" href="#"><i class="fa fa-vk"></i></a></li>										<li><a class="page_social ico_xing" href="#"><i class="fa fa-xing"></i></a></li>										<li><a class="page_social ico_weibo" href="#"><i class="fa fa-weibo"></i></a></li>										<li><a class="page_social ico_rss" href="#"><i class="fa fa-rss"></i></a></li>																		-->
+								</ul>
+							</div>
+						</div>
+					</div> <!-- END TEAM MEMBER #4 -->
+				</div> <!-- END TEAM MEMBERS HOLDER -->
+			</div> <!-- End container -->
+		</section> <!-- END TEAM -->
+		<!-- TESTIMONIALS			============================================= -->
+		<div id="testimonials">
+			<div class="container">
+				<!-- SECTION TITLE -->
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h3>Mas de <span class="clients-counter">27000</span> clientes nos avalan</h3>
+					</div>
+				</div> <!-- TESTIMONIALS HOLDER -->
+				<div class="row">
+					<!-- TESTIMONIAL #1 -->
+					<div class="col-sm-4">
+						<div class="testimonial text-center animated" data-animation="fadeInUp"
+							data-animation-delay="500">
+							<!-- Testimonial Message -->
+							<div class="testi-content">
+								<p>PPI fue mi primer experiencia en inversión. Excelente atención e información para
+									estar al día con las finanzas</p>
+								<div class="testi-arrow"></div>
+							</div> <!-- <!-- Testimonial Message Avatar -->
+							<!-- <div class="client-img"> -->
+							<!-- <!-- <img src="https://portfoliopersonal.com/newsletter/images/Juan.jpg" alt="John Doe"> -->
+							<!-- </div> -->
+							<!-- Testimonial Message Author -->
+							<div class="testi-author">
+								<h4>Tomás Caratini</h4> <!-- <span>CEO</span> -->
+							</div>
+						</div>
+					</div> <!-- END TESTIMONIAL #1 -->
+					<!-- TESTIMONIAL #2 -->
+					<div class="col-sm-4">
+						<div class="testimonial text-center animated" data-animation="fadeInUp"
+							data-animation-delay="600">
+							<!-- Testimonial Message -->
+							<div class="testi-content">
+								<p>Con nuestra agencia invertimos nuestras ganancias hace años en PPI. Quiero destacar
+									su profesionalismo y asesoramiento</p>
+								<div class="testi-arrow"></div>
+							</div> <!-- Testimonial Message Avatar -->
+							<!-- <div class="client-img"> -->
+							<!-- <img src="https://portfoliopersonal.com/newsletter/images/maximo.jpg" alt="Hannah Brown"> -->
+							<!-- </div> -->
+							<!-- Testimonial Message Author -->
+							<div class="testi-author">
+								<h4>Máximo Dupont</h4> <!-- <span>Creative Director</span> -->
+							</div>
+						</div>
+					</div> <!-- END TESTIMONIAL #2 -->
+					<!-- TESTIMONIAL #3 -->
+					<div class="col-sm-4">
+						<div class="testimonial text-center animated" data-animation="fadeInUp"
+							data-animation-delay="800">
+							<!-- Testimonial Message -->
+							<div class="testi-content">
+								<p>Quería invertir en farmacéutica y gaming. PPI supo asesorarme de la mejor manera para
+									comprar acciones de estas compañías</p>
+								<div class="testi-arrow"></div>
+							</div> <!-- Testimonial Message Avatar -->
+							<!-- <div class="client-img"> -->
+							<!-- <img src="https://portfoliopersonal.com/newsletter/images/florentina.jpg" alt="Jane Doe"> -->
+							<!-- </div> -->
+							<!-- Testimonial Message Author -->
+							<div class="testi-author">
+								<h4>Martina De Angelis</h4> <!-- <span>Programmer</span> -->
+							</div>
+						</div>
+					</div> <!-- END TESTIMONIAL #3 -->
+				</div> <!-- END TESTIMONIALS HOLDER -->
+			</div> <!-- End container -->
+		</div> <!-- END TESTIMONIALS -->
+		<!-- BLOG			============================================= -->
+		<section id="blog">
+			<div class="container">
+				<!-- SECTION TITLE -->
+				<div class="row">
+					<div class="col-md-12 titlebar">
+						<h3>Convertite en un experto inversor PPI</h3>
+						<h2>¿Como empezar?</h2>
+					</div>
+				</div>
+				<div class="row">
+					<!-- BLOG ARTICLE 2 -->
+					<div id="blog_post_2" class="col-md-4 animated" data-animation="fadeInUp"
+						data-animation-delay="700">
+						<article>
+							<!-- YouTube video link -->
+							<div class="video-block"> <iframe width="853" height="480" src="86IPuhbHEnU.html"></iframe>
+							</div> <!-- Post Titlebar -->
+							<div class="blog-post-titlebar">
+								<h4>¿Qué es PPI Global?</h4>
+							</div> <!-- Post Meta -->
+							<!-- <div class="blog-post-info"> -->
+							<!-- September 12, 2014 / <a href="#" title="comments">25 Comments</a> -->
+							<!-- </div> -->
+							<!-- Post Summary -->
+							<div class="blog-post-desc">
+								<p>La plataforma internacional desde la que podrás operar en el mundo. Todos las
+									opciones a un clic. </p>
+							</div> <a target="_blank" class="btn btn-theme"
+								href="https://www.youtube.com/watch?v=86IPuhbHEnU">Ver más <i
+									class="fa fa-angle-double-right"></i></a>
+						</article>
+					</div> <!-- END BLOG ARTICLE 2 -->
+					<!-- BLOG ARTICLE 3 -->
+					<div id="blog_post_3" class="col-md-4 animated" data-animation="fadeInUp"
+						data-animation-delay="900">
+						<article>
+							<!-- Post Image -->
+							<div class="video-block"> <iframe width="853" height="480" src="YBncC1PfK18.html"></iframe>
+							</div> <!-- Post Titlebar -->
+							<div class="blog-post-titlebar">
+								<h4>¿Cómo es nuestro supermercado de FCI?</h4>
+							</div> <!-- Post Meta -->
+							<!-- <div class="blog-post-info"> -->
+							<!-- August 16, 2014 / <a href="#" title="comments">8 Comments</a> -->
+							<!-- </div> -->
+							<!-- Post Summary -->
+							<div class="blog-post-desc">
+								<p>La oferta de más de 15 Sociedades Gerentes líderes, y más de 200 fondos diferentes.
+								</p>
+							</div> <a target="_blank" class="btn btn-theme"
+								href="https://www.youtube.com/watch?v=YBncC1PfK18&amp;list=PLoNQCEhcjac-SBZpqg5OHsd1DanVSdj1q&amp;index=17">Ver
+								más <i class="fa fa-angle-double-right"></i></a>
+						</article>
+					</div> <!-- END BLOG ARTICLE 3 -->
+					<!-- BLOG ARTICLE 1 -->
+					<div id="blog_post_1" class="col-md-4 animated" data-animation="fadeInUp"
+						data-animation-delay="500">
+						<article>
+							<!-- Post Image -->
+							<div class="video-block"> <iframe width="853" height="480" src="arJlkKW8GOI.html"></iframe>
+							</div> <!-- Post Titlebar -->
+							<div class="blog-post-titlebar">
+								<h4>¿Cómo operar?</h4>
+							</div> <!-- Post Meta -->
+							<!-- <div class="blog-post-info"> -->
+							<!-- September 14, 2014 / <a href="#" title="comments">17 Comments</a> -->
+							<!-- </div> -->
+							<!-- Post Summary -->
+							<div class="blog-post-desc">
+								<p>En nuestra plataforma podrás operar miles de productos de Argentina y el mundo en
+									tiempo real. </p>
+							</div> <a target="_blank" class="btn btn-theme"
+								href="https://www.youtube.com/watch?v=arJlkKW8GOI&amp;t=1s">Ver más <i
+									class="fa fa-angle-double-right"></i></a>
+						</article>
+					</div> <!-- END BLOG ARTICLE 1 -->
+				</div> <!-- End row -->
+			</div> <!-- End container -->
+		</section> <!-- END BLOG-->
+		<!-- PROMO LINE 			============================================= -->
+		<div id="promo_line">
+			<div class="container">
+				<div class="row">
+					<!-- PROMO LINE CONTENT -->
+					<div class="col-md-12 text-center">
+						<h2>¡Comenzá hoy!</h2>
+						<p>Disfrutá de la experiencia de invertir con PPI</p> <a
+							href="https://cuenta.portfoliopersonal.com/abrirCuenta" class="btn btn-theme">Abrir cuenta
+							de Inversiones</a> <!-- <a href="#" class="btn btn-theme">Discover More</a>	 -->
+					</div>
+				</div> <!-- End row -->
+			</div> <!-- End container -->
+		</div> <!-- END PROMO LINE -->
+		<!-- CONTACT-INFO			============================================= -->
+		<section id="contact-info">
+			<div class="container">
+				<!-- SECTION TITLE -->
+				<div class="row">
+					<div class="col-sm-12 titlebar">
+						<h3>Contacto</h3>
+						<h2>Donde encontrarnos</h2>
+					</div>
+				</div>
+				<div class="row">
+					<!-- Office Location -->
+					<div class="col-xs-12 col-sm-6 col-md-3 contact-info text-center triggerAnimation animated"
+						data-animate="bounceIn"> <i class="fa fa-map-marker"></i>
+						<h4 class="contact_title">Dirección</h4>
+						<p class="contact_description">Sarmiento 459. Piso 4. C1041AAI CABA.</p>
+					</div> <!-- Call Us -->
+					<div class="col-xs-12 col-sm-6 col-md-3 contact-info text-center triggerAnimation animated"
+						data-animate="bounceIn"> <i class="fa fa-phone"></i>
+						<h4 class="contact_title">Teléfono</h4>
+						<p class="contact_description"> 0800 345 7599</p>
+					</div> <!-- Email Address -->
+					<div class="col-xs-12 col-sm-6 col-md-3 contact-info text-center triggerAnimation animated"
+						data-animate="bounceIn"> <i class="fa fa-envelope-o"></i>
+						<h4 class="contact_title">Email</h4> <a
+							href="mailto:consultas@portfoliopersonal.com">consultas@portfoliopersonal.com</a>
+					</div> <!-- Working Hours -->
+					<div class="col-xs-12 col-sm-6 col-md-3 contact-info text-center triggerAnimation animated"
+						data-animate="bounceIn"> <i class="fa fa-clock-o"></i>
+						<h4 class="contact_title">Horarios de atención</h4>
+						<p class="contact_description">Lunes - Viernes 10:00 - 18:00</p>
+					</div>
+				</div> <!-- End row -->
+			</div> <!-- End container -->
+		</section> <!-- END CONTACT-INFO -->
+		<!-- FOOTER			============================================= -->
+		<footer id="footer">
+			<div class="container">
+				<!-- FOOTER SOCIALS -->
+				<div class="row">
+					<div class="col-md-4 text-center">
+						<div class="col-sm-12 ">
+							<div> <img style="width: 28%;padding-bottom: 20px;" src="images/DATAWEB.jpg" border="0">
+								<h4 style="color: #ddd;">Portfolio Personal Inversiones</h4>
+								<p style="color: #ddd;">ALyC Integral nº686</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 text-center">
+						<!-- FOOTER COPYRIGHT -->
+						<div class="row">
+							<div id="footer_copyright" class="col-sm-12 text-center">
+								<h4 style="color: #ddd;">SEGUINOS:</h4>
+							</div>
+						</div>
+						<div id="footer_socials" class="col-sm-12 text-center">
+							<div id="contact_icons">
+								<ul class="contact-socials clearfix">
+									<li><a target="_blank" class="foo_social ico-facebook"
+											href="https://www.facebook.com/PPersonal/"><i
+												class="fa fa-facebook"></i></a></li>
+									<li><a target="_blank" class="foo_social ico-twitter"
+											href="https://twitter.com/pportfolio"><i class="fa fa-twitter"></i></a></li>
+									<li><a target="_blank" class="foo_social ico-linkedin"
+											href="https://www.linkedin.com/company/portfoliopersonal"><i
+												class="fa fa-linkedin"></i></a></li>
+									<li><a target="_blank" class="foo_social ico-youtube"
+											href="https://www.youtube.com/user/PortfolioPersonal"><i
+												class="fa fa-youtube"></i></a></li>
+									<li><a target="_blank" class="foo_social ico-instagram"
+											href="https://www.instagram.com/portfoliopersonalinversiones"><i
+												class="fa fa-instagram"></i></a></li>
+									<!--									<li><a class="foo_social ico-dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>										<li><a class="foo_social ico-behance" href="#"><i class="fa fa-behance"></i></a></li>									<li><a class="foo_social ico-pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>											<li><a class="foo_social ico-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>									<li><a class="foo_social ico-digg" href="#"><i class="fa fa-digg"></i></a></li>									<li><a class="foo_social ico-deviantart" href="#"><i class="fa fa-deviantart"></i></a></li>									<li><a class="foo_social ico-envelope" href="#"><i class="fa fa-envelope-square"></i></a></li>										<li><a class="foo_social ico-delicious" href="#"><i class="fa fa-delicious"></i></a></li>									<li><a class="foo_social ico-dropbox" href="#"><i class="fa fa-dropbox"></i></a></li>									<li><a class="foo_social ico-skype" href="#"><i class="fa fa-skype"></i></a></li>										<li><a class="foo_social ico-youtube" href="#"><i class="fa fa-youtube"></i></a></li>									<li><a class="foo_social ico-tumblr" href="#"><i class="fa fa-tumblr"></i></a></li>									<li><a class="foo_social ico-vimeo" href="#"><i class="fa fa-vimeo-square"></i></a></li>									<li><a class="foo_social ico-flickr" href="#"><i class="fa fa-flickr"></i></a></li>									<li><a class="foo_social ico-github" href="#"><i class="fa fa-github-alt"></i></a></li>									<li><a class="foo_social ico-renren" href="#"><i class="fa fa-renren"></i></a></li>									<li><a class="foo_social ico-vk" href="#"><i class="fa fa-vk"></i></a></li>									<li><a class="foo_social ico-xing" href="#"><i class="fa fa-xing"></i></a></li>									<li><a class="foo_social ico-weibo" href="#"><i class="fa fa-weibo"></i></a></li>									<li><a class="foo_social ico-rss" href="#"><i class="fa fa-rss"></i></a></li>																		-->
+								</ul>
+							</div>
+						</div> <!-- END FOOTER SOCIALS -->
+						<div class="row">
+							<div id="footer_copyright" class="col-sm-12 text-center" style="padding-top: 50px;">
+								<p style="color: #ddd;">Descargá la app:</p> <a
+									href="https://play.google.com/store/apps/details?id=com.portfoliopersonal.appmobile"
+									target="_blank"> <img style="*" src="fonts/googlePlay.svg" border="0"> </a> <a
+									href="https://itunes.apple.com/us/app/portfolio-personal/id1245370622?l=es&amp;ls=1&amp;mt=8"
+									target="_blank"> <img style="*" src="fonts/appStore.svg" border="0"> </a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 text-center">
+						<p> <a class="link" href="https://trading.portfoliopersonal.com/Varios/EstadosServicios">Estados
+								de nuestros servicios</a></p>
+						<p> <a class="link"
+								href="https://www.portfoliopersonal.com/Contenido/TerminosYCondiciones">Términos y
+								políticas de privacidad</a></p>
+						<p> <a class="link" href="#" data-toggle="modal" data-target="#legales">Legales</a></p>
+						<p> <a class="link" href="https://www.portfoliopersonal.com/Contenido/Legales">Normativas de
+								Mercado</a></p>
+						<p> <a class="link" href="https://www.portfoliopersonal.com/Contenido/CodigoConducta">Código de
+								conducta</a></p>
+						<p> <a class="link" href="https://www.portfoliopersonal.com/Contenido/PersonalIdoneo">Personal
+								idóneo</a></p>
+						<p> <a class="link" href="https://www.portfoliopersonal.com/Contenido/Comisiones">Comisiones</a>
+						</p>
+					</div>
+				</div>
+			</div> <!-- End container -->
+		</footer> <!-- END FOOTER -->
+	</div>
+	<script type="text/javascript"
+		id>!function (b, e, f, g, a, c, d) { b.fbq || (a = b.fbq = function () { a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments) }, b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], c = e.createElement(f), c.async = !0, c.src = g, d = e.getElementsByTagName(f)[0], d.parentNode.insertBefore(c, d)) }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js"); fbq("init", "189727338640868"); fbq("track", "PageView");</script>
+	<noscript><img height="1" width="1" style="display:none" src="tr"></noscript>
+
+	<!-- END CONTENT WRAPPER --> <a id="scrollUp" href="#top" title
+		style="display: none; position: fixed; z-index: 2147483647;"></a><iframe src="pixel.html"
+		style="display: none;"></iframe>
+</body>
+
+</html>
