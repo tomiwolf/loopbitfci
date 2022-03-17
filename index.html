@@ -111,6 +111,52 @@
 		}
 
 		/*------------------------------------------*/
+.btnasesor{
+	background-color: #00aeef;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 18px 30px;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+
+		display: inline-block;
+    margin-bottom: 0;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+
+.btnasesor:hover {
+			background-color: #034EA2;
+			color: #fff;
+		}
+
+		/*------------------------------------------*/
+		/*	 Button Hover/Focus/*------------------------------------------*/
+		.btnasesor:focus {
+			outline: none;
+		}
+
+		.btnasesor:focus {
+			color: #f8f8f8;
+			text-decoration: none;
+		}
+
 		/*	 Theme Button/*------------------------------------------*/
 		.btn-theme {
 			background-color: #00aeef;
@@ -118,7 +164,7 @@
 			font-size: 14px;
 			text-transform: uppercase;
 			font-weight: 700;
-			padding: 10px 20px;
+			padding: 18px 30px;
 			-webkit-transition: all 300ms ease-in-out;
 			-moz-transition: all 300ms ease-in-out;
 			-o-transition: all 300ms ease-in-out;
@@ -2846,6 +2892,8 @@
 			@media (max-width: 320px) {
 
 				/*------------------------------------------*/
+
+				
 				/*	 Theme Button	/*------------------------------------------*/
 				.btn-theme {
 					font-size: 13px;
@@ -3340,7 +3388,7 @@
 				<nav id="navigation-menu" class="collapse navbar-collapse" role="navigation" style>
 					<ul class="nav navbar-nav navbar-right">
 						<li><a id="GoToHome" class="selected-nav" href="#intro">Home</a></li>
-						<li><a id="GoToAbout" href="#services">Abrir una cuenta</a></li>
+						<!-- <li><a id="GoToAbout" href="#services">Abrir una cuenta</a></li> -->
 						<li><a id="GoToWorks" href="#about">Quienes somos</a></li>
 						<li><a id="GoToTeam" href="#features">Beneficios </a></li>
 						<li><a id="GoToPricing" href="#team">Equipo</a></li>
@@ -3354,7 +3402,7 @@
 	<!-- CONTENT WRAPPER		============================================= -->
 	<div id="content_wrapper">
 		<!-- INTRO			============================================= -->
-		<section id="intro" style="background-image: url(&#x27;images/PPIGlobal_Landing.png&#x27;)">
+		<section id="intro" style="background-color: #000">
 			<div class="overlay">
 				<div class="container">
 					<div id="intro_content" class="row">
@@ -3366,8 +3414,8 @@
 								<p>Miles de oportunidades –acciones, bonos, y más- de los principales mercados
 									internacionales. Comenzá hoy, e invertí en el mundo desde la palma de tu mano. </p>
 							</div> <!-- INTRO BUTTONS -->
-							<div class="intro_buttons"> <a class="btn btn-theme"
-									href="https://cuenta.portfoliopersonal.com/abrirCuenta">Abrí tu cuenta</a>
+							<div class="intro_buttons"> <a class="btnasesor"
+									href="https://cuenta.portfoliopersonal.com/abrirCuenta">Obtener un asesor</a>
 								<!-- <a class="btn btn-theme" href="https://www.portfoliopersonal.com/">Descubrí más</a>									 -->
 							</div>
 						</div> <!-- END TEXT -->
@@ -3408,30 +3456,24 @@
 				</div>
 				<div class="row">
 					<!-- Office Location -->
-					<div class="col-xs-6 col-sm-6 col-md-3 contact-info text-center triggerAnimation animated"
+					<div class="col-xs-6 col-sm-6 col-md-4 contact-info text-center triggerAnimation animated"
 						data-animate="bounceIn"> <i class="fa fa-globe"></i>
 						<h4 class="contact_title">Más opciones</h4>
 						<p class="contact_description">Accedé a miles de oportunidades -bonos, acciones y más- de las
 							Bolsas de Nueva York, Hong Kong, Londres, y muchas otras.</p>
 					</div> <!-- Call Us -->
-					<div class="col-xs-6 col-sm-6 col-md-3 contact-info text-center triggerAnimation animated"
+					<div class="col-xs-6 col-sm-6 col-md-4 contact-info text-center triggerAnimation animated"
 						data-animate="bounceIn"> <i class="fa fa-check"></i>
 						<h4 class="contact_title">Más simple</h4>
 						<p class="contact_description"> Diseño amigable e intuitivo para que analices, planifiques y
 							operes cualquier instrumento, en pocos clicks y con toda la información a tu alcance.</p>
 					</div> <!-- Email Address -->
-					<div class="col-xs-6 col-sm-6 col-md-3 contact-info text-center triggerAnimation animated"
+					<div class="col-xs-6 col-sm-6 col-md-4 contact-info text-center triggerAnimation animated"
 						data-animate="bounceIn"> <i class="fa fa-fighter-jet"></i>
 						<h4 class="contact_title">Más rápido</h4>
 						<p class="contact_description">Operá en tiempo real, chequeá cotizaciones y realizá
 							transacciones en el mercado que elijas desde tu cuenta comitente.</p>
 					</div> <!-- Working Hours -->
-					<div class="col-xs-6 col-sm-6 col-md-3 contact-info text-center triggerAnimation animated"
-						data-animate="bounceIn"> <i class="fa fa-laptop"></i>
-						<h4 class="contact_title">Más tecnología</h4>
-						<p class="contact_description">Innovación aplicada a tus inversiones para que puedas operar de
-							forma ágil, segura e intuitiva, con las más avanzadas herramientas de análisis.</p>
-					</div>
 				</div> <!-- End row -->
 			</div> <!-- End container -->
 		</section> <!-- END CONTACT-INFO -->
@@ -3461,51 +3503,7 @@
 				</div>
 			</div>
 		</section> <!-- SERVICES			============================================= -->
-		<section id="services">
-			<div class="container">
-				<!-- <!-- SERVICE IMAGE -->
-				<!-- <div id="services_image" class="col-md-12 text-center animated" data-animation="fadeInUp" data-animation-delay="300"> -->
-				<!-- <img class="img-responsive" src="img/thumbs/features-image.jpg" alt="services_image" />	 -->
-				<!-- </div>					 -->
-				<!-- </div>	 -->
-				<!-- SECTION TITLE -->
-				<div class="row">
-					<div class="col-sm-12 titlebar">
-						<h3>Empezá ahora</h3>
-						<h2>Abrí tu cuenta de Inversiones PPI</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6">
-						<!-- SERVICE BOX -->
-						<div class="service-box animated" data-animation="fadeInUp" data-animation-delay="300">
-							<h4><i class="fa fa-mobile"></i>Apertura online</h4>
-							<p>En sólo unos pocos pasos. </p>
-						</div> <!-- SERVICE BOX -->
-						<div class="service-box animated" data-animation="fadeInUp" data-animation-delay="500">
-							<h4><i class="fa fa-check"></i>Mínimos requisitos. </h4>
-							<p>Simple y rápido.</p>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<!-- SERVICE BOX -->
-						<div class="service-box animated" data-animation="fadeInUp" data-animation-delay="300">
-							<h4><i class="fa fa-cogs"></i>Miles de alternativas de inversión</h4>
-							<p>Oportunidades en Argentina y en el mundo.</p>
-						</div> <!-- SERVICE BOX -->
-						<div class="service-box animated" data-animation="fadeInUp" data-animation-delay="500">
-							<h4><i class="fa fa-area-chart"></i>La mejor información y herramientas</h4>
-							<p>Armá tu propio plan de inversiones.</p>
-						</div>
-					</div>
-				</div> <!-- SERVICE BUTTONS -->
-				<div class="row">
-					<div id="service-buttons" class="col-md-12 text-center"> <a
-							href="https://portfoliopersonal.com/AbrirCuenta" class="btn btn-theme animated"
-							data-animation="bounceIn" data-animation-delay="600"> Comenzá a invertir</a> </div>
-				</div>
-			</div> <!-- End container -->
-		</section> <!-- END SERVICES -->
+		
 		<!-- STATISTIC BANNER			============================================= -->
 		<div id="statistic_banner" style="background-image: url(&#x27;images/statistic-banner.jpg&#x27;)">
 			<div class="container">
@@ -3793,104 +3791,7 @@
 					</div> <!-- END TEAM MEMBER #4 -->
 				</div> <!-- END TEAM MEMBERS HOLDER -->
 				<!-- TEAM MEMBERS HOLDER -->
-				<div class="row team_members_wrapper">
-					<!-- TEAM MEMBER #1 -->
-					<div class="col-xs-6 col-sm-6 col-md-3 animated" data-animation="fadeInRight"
-						data-animation-delay="500">
-						<div class="team-member text-center">
-							<!-- Team Member Photo  -->
-							<div class="img-block"> <img class="img-responsive" src="images/nosotros_5.jpg"
-									alt="team_foto"> </div> <!-- Team Member Meta  -->
-							<div class="team-img-meta">
-								<h5>Sabrina Corujo</h5>
-								<h6>Directora</h6>
-								<!-- <p>Licenciada en Economía de la Universidad Católica Argentina (UCA). Más de 25 años de experiencia en el mercado de capitales.</p>	 -->
-							</div> <!-- Team Member Social Icons  -->
-							<div class="team-socials">
-								<ul class="team-member-socials clearfix">
-									<li><a class="page_social ico_linkedin" target="_blank"
-											href="https://www.linkedin.com/in/sabrina-corujo-6512b013/"><i
-												class="fa fa-linkedin"></i></a></li>
-									<!-- <li><a class="page_social ico_facebook" href="#"><i class="fa fa-facebook"></i></a></li> -->
-									<!-- <li><a class="page_social ico_twitter" href="#"><i class="fa fa-twitter"></i></a></li> -->
-									<!-- <li><a class="page_social ico_google_plus" href="#"><i class="fa fa-google-plus"></i></a></li> -->
-									<!-- <li><a class="page_social ico_behance" href="#"><i class="fa fa-behance"></i></a></li> -->
-									<!--											<li><a class="page_social ico_linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>																		<li><a class="page_social ico_digg" href="#"><i class="fa fa-digg"></i></a></li>										<li><a class="page_social ico_deviantart" href="#"><i class="fa fa-deviantart"></i></a></li>										<li><a class="page_social ico_envelope" href="#"><i class="fa fa-envelope-square"></i></a></li>																	<li><a class="page_social ico_delicious" href="#"><i class="fa fa-delicious"></i></a></li>																		<li><a class="page_social ico_dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>										<li><a class="page_social ico_instagram" href="#"><i class="fa fa-instagram"></i></a></li>										<li><a class="page_social ico_pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>											<li><a class="page_social ico_dropbox" href="#"><i class="fa fa-dropbox"></i></a></li>										<li><a class="page_social ico_skype" href="#"><i class="fa fa-skype"></i></a></li>										<li><a class="page_social ico_youtube" href="#"><i class="fa fa-youtube"></i></a></li>										<li><a class="page_social ico_tumblr" href="#"><i class="fa fa-tumblr"></i></a></li>										<li><a class="page_social ico_vimeo" href="#"><i class="fa fa-vimeo-square"></i></a></li>										<li><a class="page_social ico_flickr" href="#"><i class="fa fa-flickr"></i></a></li>										<li><a class="page_social ico_github" href="#"><i class="fa fa-github-alt"></i></a></li>										<li><a class="page_social ico_renren" href="#"><i class="fa fa-renren"></i></a></li>										<li><a class="page_social ico_vk" href="#"><i class="fa fa-vk"></i></a></li>										<li><a class="page_social ico_xing" href="#"><i class="fa fa-xing"></i></a></li>										<li><a class="page_social ico_weibo" href="#"><i class="fa fa-weibo"></i></a></li>										<li><a class="page_social ico_rss" href="#"><i class="fa fa-rss"></i></a></li>																		-->
-								</ul>
-							</div>
-						</div>
-					</div> <!-- END TEAM MEMBER #1 -->
-					<!-- TEAM MEMBER #2 -->
-					<div class="col-xs-6 col-sm-6 col-md-3 animated" data-animation="fadeInLeft"
-						data-animation-delay="500">
-						<div class="team-member text-center">
-							<!-- Team Member Photo  -->
-							<div class="img-block"> <img class="img-responsive" src="images/nosotros_6.jpg"
-									alt="team_foto"> </div> <!-- Team Member Meta  -->
-							<div class="team-img-meta">
-								<h5>Matias Clark Liftenegger</h5>
-								<h6>Director</h6>
-								<!-- <p>Desde el 2009, se desempeñó como Director de INTL CIBSA (ex Compañía Inversora Bursátil de Bolsa). Hoy, es Director de PP Inversiones.</p>	 -->
-							</div> <!-- Team Member Social Icons  -->
-							<div class="team-socials">
-								<ul class="team-member-socials clearfix">
-									<li><a class="page_social ico_linkedin" target="_blank"
-											href="https://www.linkedin.com/in/matiasclarkliftenegger/"><i
-												class="fa fa-linkedin"></i></a></li>
-									<!--												<li><a class="page_social ico_facebook" href="#"><i class="fa fa-facebook"></i></a></li>										<li><a class="page_social ico_twitter" href="#"><i class="fa fa-twitter"></i></a></li>										<li><a class="page_social ico_google_plus" href="#"><i class="fa fa-google-plus"></i></a></li>										<li><a class="page_social ico_behance" href="#"><i class="fa fa-behance"></i></a></li>																													<li><a class="page_social ico_linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>																		<li><a class="page_social ico_digg" href="#"><i class="fa fa-digg"></i></a></li>										<li><a class="page_social ico_deviantart" href="#"><i class="fa fa-deviantart"></i></a></li>										<li><a class="page_social ico_envelope" href="#"><i class="fa fa-envelope-square"></i></a></li>																	<li><a class="page_social ico_delicious" href="#"><i class="fa fa-delicious"></i></a></li>																		<li><a class="page_social ico_dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>										<li><a class="page_social ico_instagram" href="#"><i class="fa fa-instagram"></i></a></li>										<li><a class="page_social ico_pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>											<li><a class="page_social ico_dropbox" href="#"><i class="fa fa-dropbox"></i></a></li>										<li><a class="page_social ico_skype" href="#"><i class="fa fa-skype"></i></a></li>										<li><a class="page_social ico_youtube" href="#"><i class="fa fa-youtube"></i></a></li>										<li><a class="page_social ico_tumblr" href="#"><i class="fa fa-tumblr"></i></a></li>										<li><a class="page_social ico_vimeo" href="#"><i class="fa fa-vimeo-square"></i></a></li>										<li><a class="page_social ico_flickr" href="#"><i class="fa fa-flickr"></i></a></li>										<li><a class="page_social ico_github" href="#"><i class="fa fa-github-alt"></i></a></li>										<li><a class="page_social ico_renren" href="#"><i class="fa fa-renren"></i></a></li>										<li><a class="page_social ico_vk" href="#"><i class="fa fa-vk"></i></a></li>										<li><a class="page_social ico_xing" href="#"><i class="fa fa-xing"></i></a></li>										<li><a class="page_social ico_weibo" href="#"><i class="fa fa-weibo"></i></a></li>										<li><a class="page_social ico_rss" href="#"><i class="fa fa-rss"></i></a></li>																		-->
-								</ul>
-							</div>
-						</div>
-					</div> <!-- END TEAM MEMBER #2 -->
-					<!-- TEAM MEMBER #3 -->
-					<div class="col-xs-6 col-sm-6 col-md-3 animated" data-animation="fadeInRight"
-						data-animation-delay="800">
-						<div class="team-member text-center">
-							<!-- Team Member Photo  -->
-							<div class="img-block"> <img class="img-responsive" src="images/nosotros_7.jpg"
-									alt="team_foto"> </div> <!-- Team Member Meta  -->
-							<div class="team-img-meta">
-								<h5>Matias Roig</h5>
-								<h6>Director</h6>
-								<!-- <p>Más de 20 años de experiencia en Bancos e instituciones financieras del país desempeñándose dentro del sector comercial. </p>		 -->
-							</div> <!-- Team Member Social Icons  -->
-							<div class="team-socials">
-								<ul class="team-member-socials clearfix">
-									<li><a class="page_social ico_linkedin" target="_blank"
-											href="https://www.linkedin.com/in/matias-federico-roig-cfa-27659bb/"><i
-												class="fa fa-linkedin"></i></a></li>
-									<!-- <li><a class="page_social ico_facebook" href="#"><i class="fa fa-facebook"></i></a></li> -->
-									<!-- <li><a class="page_social ico_twitter" href="#"><i class="fa fa-twitter"></i></a></li> -->
-									<!-- <li><a class="page_social ico_google_plus" href="#"><i class="fa fa-google-plus"></i></a></li> -->
-									<!-- <li><a class="page_social ico_behance" href="#"><i class="fa fa-behance"></i></a></li> -->
-									<!--											<li><a class="page_social ico_linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>																		<li><a class="page_social ico_digg" href="#"><i class="fa fa-digg"></i></a></li>										<li><a class="page_social ico_deviantart" href="#"><i class="fa fa-deviantart"></i></a></li>										<li><a class="page_social ico_envelope" href="#"><i class="fa fa-envelope-square"></i></a></li>																	<li><a class="page_social ico_delicious" href="#"><i class="fa fa-delicious"></i></a></li>																		<li><a class="page_social ico_dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>										<li><a class="page_social ico_instagram" href="#"><i class="fa fa-instagram"></i></a></li>										<li><a class="page_social ico_pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>											<li><a class="page_social ico_dropbox" href="#"><i class="fa fa-dropbox"></i></a></li>										<li><a class="page_social ico_skype" href="#"><i class="fa fa-skype"></i></a></li>										<li><a class="page_social ico_youtube" href="#"><i class="fa fa-youtube"></i></a></li>										<li><a class="page_social ico_tumblr" href="#"><i class="fa fa-tumblr"></i></a></li>										<li><a class="page_social ico_vimeo" href="#"><i class="fa fa-vimeo-square"></i></a></li>										<li><a class="page_social ico_flickr" href="#"><i class="fa fa-flickr"></i></a></li>										<li><a class="page_social ico_github" href="#"><i class="fa fa-github-alt"></i></a></li>										<li><a class="page_social ico_renren" href="#"><i class="fa fa-renren"></i></a></li>										<li><a class="page_social ico_vk" href="#"><i class="fa fa-vk"></i></a></li>										<li><a class="page_social ico_xing" href="#"><i class="fa fa-xing"></i></a></li>										<li><a class="page_social ico_weibo" href="#"><i class="fa fa-weibo"></i></a></li>										<li><a class="page_social ico_rss" href="#"><i class="fa fa-rss"></i></a></li>																		-->
-								</ul>
-							</div>
-						</div>
-					</div> <!-- END TEAM MEMBER #3 -->
-					<!-- TEAM MEMBER #4 -->
-					<div class="col-xs-6 col-sm-6 col-md-3 animated" data-animation="fadeInLeft"
-						data-animation-delay="800">
-						<div class="team-member text-center">
-							<!-- Team Member Photo  -->
-							<div class="img-block"> <img class="img-responsive" src="images/nosotros_8.jpg"
-									alt="team_foto"> </div> <!-- Team Member Meta  -->
-							<div class="team-img-meta">
-								<h5>Ingrid Varela</h5>
-								<h6>Directora</h6>
-								<!-- <p>Licenciado en Economía de la Universidad de Buenos Aires (UBA). MBA del IAE Business School. Actualmente está al frente de la Mesa de Operaciones de PP Inversiones. -->
-								<!-- </p>		 -->
-							</div> <!-- Team Member Social Icons  -->
-							<div class="team-socials">
-								<ul class="team-member-socials clearfix">
-									<li><a class="page_social ico_linkedin" target="_blank"
-											href="https://www.linkedin.com/in/ingrid-varela-995782a1/"><i
-												class="fa fa-linkedin"></i></a></li>
-									<!--												<li><a class="page_social ico_facebook" href="#"><i class="fa fa-facebook"></i></a></li>										<li><a class="page_social ico_twitter" href="#"><i class="fa fa-twitter"></i></a></li>										<li><a class="page_social ico_google_plus" href="#"><i class="fa fa-google-plus"></i></a></li>										<li><a class="page_social ico_behance" href="#"><i class="fa fa-behance"></i></a></li>																													<li><a class="page_social ico_linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>																		<li><a class="page_social ico_digg" href="#"><i class="fa fa-digg"></i></a></li>										<li><a class="page_social ico_deviantart" href="#"><i class="fa fa-deviantart"></i></a></li>										<li><a class="page_social ico_envelope" href="#"><i class="fa fa-envelope-square"></i></a></li>																	<li><a class="page_social ico_delicious" href="#"><i class="fa fa-delicious"></i></a></li>																		<li><a class="page_social ico_dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>										<li><a class="page_social ico_instagram" href="#"><i class="fa fa-instagram"></i></a></li>										<li><a class="page_social ico_pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>											<li><a class="page_social ico_dropbox" href="#"><i class="fa fa-dropbox"></i></a></li>										<li><a class="page_social ico_skype" href="#"><i class="fa fa-skype"></i></a></li>										<li><a class="page_social ico_youtube" href="#"><i class="fa fa-youtube"></i></a></li>										<li><a class="page_social ico_tumblr" href="#"><i class="fa fa-tumblr"></i></a></li>										<li><a class="page_social ico_vimeo" href="#"><i class="fa fa-vimeo-square"></i></a></li>										<li><a class="page_social ico_flickr" href="#"><i class="fa fa-flickr"></i></a></li>										<li><a class="page_social ico_github" href="#"><i class="fa fa-github-alt"></i></a></li>										<li><a class="page_social ico_renren" href="#"><i class="fa fa-renren"></i></a></li>										<li><a class="page_social ico_vk" href="#"><i class="fa fa-vk"></i></a></li>										<li><a class="page_social ico_xing" href="#"><i class="fa fa-xing"></i></a></li>										<li><a class="page_social ico_weibo" href="#"><i class="fa fa-weibo"></i></a></li>										<li><a class="page_social ico_rss" href="#"><i class="fa fa-rss"></i></a></li>																		-->
-								</ul>
-							</div>
-						</div>
-					</div> <!-- END TEAM MEMBER #4 -->
+				
 				</div> <!-- END TEAM MEMBERS HOLDER -->
 			</div> <!-- End container -->
 		</section> <!-- END TEAM -->
@@ -3965,92 +3866,14 @@
 			</div> <!-- End container -->
 		</div> <!-- END TESTIMONIALS -->
 		<!-- BLOG			============================================= -->
-		<section id="blog">
-			<div class="container">
-				<!-- SECTION TITLE -->
-				<div class="row">
-					<div class="col-md-12 titlebar">
-						<h3>Convertite en un experto inversor PPI</h3>
-						<h2>¿Como empezar?</h2>
-					</div>
-				</div>
-				<div class="row">
-					<!-- BLOG ARTICLE 2 -->
-					<div id="blog_post_2" class="col-md-4 animated" data-animation="fadeInUp"
-						data-animation-delay="700">
-						<article>
-							<!-- YouTube video link -->
-							<div class="video-block"> <iframe width="853" height="480" src="86IPuhbHEnU.html"></iframe>
-							</div> <!-- Post Titlebar -->
-							<div class="blog-post-titlebar">
-								<h4>¿Qué es PPI Global?</h4>
-							</div> <!-- Post Meta -->
-							<!-- <div class="blog-post-info"> -->
-							<!-- September 12, 2014 / <a href="#" title="comments">25 Comments</a> -->
-							<!-- </div> -->
-							<!-- Post Summary -->
-							<div class="blog-post-desc">
-								<p>La plataforma internacional desde la que podrás operar en el mundo. Todos las
-									opciones a un clic. </p>
-							</div> <a target="_blank" class="btn btn-theme"
-								href="https://www.youtube.com/watch?v=86IPuhbHEnU">Ver más <i
-									class="fa fa-angle-double-right"></i></a>
-						</article>
-					</div> <!-- END BLOG ARTICLE 2 -->
-					<!-- BLOG ARTICLE 3 -->
-					<div id="blog_post_3" class="col-md-4 animated" data-animation="fadeInUp"
-						data-animation-delay="900">
-						<article>
-							<!-- Post Image -->
-							<div class="video-block"> <iframe width="853" height="480" src="YBncC1PfK18.html"></iframe>
-							</div> <!-- Post Titlebar -->
-							<div class="blog-post-titlebar">
-								<h4>¿Cómo es nuestro supermercado de FCI?</h4>
-							</div> <!-- Post Meta -->
-							<!-- <div class="blog-post-info"> -->
-							<!-- August 16, 2014 / <a href="#" title="comments">8 Comments</a> -->
-							<!-- </div> -->
-							<!-- Post Summary -->
-							<div class="blog-post-desc">
-								<p>La oferta de más de 15 Sociedades Gerentes líderes, y más de 200 fondos diferentes.
-								</p>
-							</div> <a target="_blank" class="btn btn-theme"
-								href="https://www.youtube.com/watch?v=YBncC1PfK18&amp;list=PLoNQCEhcjac-SBZpqg5OHsd1DanVSdj1q&amp;index=17">Ver
-								más <i class="fa fa-angle-double-right"></i></a>
-						</article>
-					</div> <!-- END BLOG ARTICLE 3 -->
-					<!-- BLOG ARTICLE 1 -->
-					<div id="blog_post_1" class="col-md-4 animated" data-animation="fadeInUp"
-						data-animation-delay="500">
-						<article>
-							<!-- Post Image -->
-							<div class="video-block"> <iframe width="853" height="480" src="arJlkKW8GOI.html"></iframe>
-							</div> <!-- Post Titlebar -->
-							<div class="blog-post-titlebar">
-								<h4>¿Cómo operar?</h4>
-							</div> <!-- Post Meta -->
-							<!-- <div class="blog-post-info"> -->
-							<!-- September 14, 2014 / <a href="#" title="comments">17 Comments</a> -->
-							<!-- </div> -->
-							<!-- Post Summary -->
-							<div class="blog-post-desc">
-								<p>En nuestra plataforma podrás operar miles de productos de Argentina y el mundo en
-									tiempo real. </p>
-							</div> <a target="_blank" class="btn btn-theme"
-								href="https://www.youtube.com/watch?v=arJlkKW8GOI&amp;t=1s">Ver más <i
-									class="fa fa-angle-double-right"></i></a>
-						</article>
-					</div> <!-- END BLOG ARTICLE 1 -->
-				</div> <!-- End row -->
-			</div> <!-- End container -->
-		</section> <!-- END BLOG-->
+		
 		<!-- PROMO LINE 			============================================= -->
 		<div id="promo_line">
 			<div class="container">
 				<div class="row">
 					<!-- PROMO LINE CONTENT -->
 					<div class="col-md-12 text-center">
-						<h2>¡Comenzá hoy!</h2>
+						<h2>¡Contactá un asesor!</h2>
 						<p>Disfrutá de la experiencia de invertir con PPI</p> <a
 							href="https://cuenta.portfoliopersonal.com/abrirCuenta" class="btn btn-theme">Abrir cuenta
 							de Inversiones</a> <!-- <a href="#" class="btn btn-theme">Discover More</a>	 -->
