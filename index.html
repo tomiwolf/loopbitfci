@@ -30,6 +30,13 @@
 		/*   21 - Scroll to Top	 	  	   */
 		/*   22 - Contact Form Response    */
 		/* ==========================================================================   01. GENERAL & BASIC STYLES   ========================================================================== */
+		.link{
+color: #FFFFFF;
+		}
+		.link:hover{
+color: #15835a;
+		}
+		
 		#content_wrapper {
 			overflow: hidden;
 		}
@@ -1616,7 +1623,6 @@
 
 		/* ==========================================================================   17. PROMO LINE   ========================================================================== */
 		#promo_line {
-			background-image: url('images/promo-line.jpg') !important;
 			background-attachment: fixed !important;
 			background-position: center center;
 			background-repeat: no-repeat;
@@ -1702,8 +1708,10 @@
 			color: #666;
 			font-size: 16px;
 			line-height: 24px;
-			font-weight: 300;
+			font-weight: 400;
 		}
+
+		
 		.contact-info2 p {
 			color: #666;
 			font-size: 16px;
@@ -2861,6 +2869,7 @@
 			.statistic-number1 {
 				font-size: 60px !important;
 				line-height: 60px !important;
+			}
 
 				/*------------------------------------------*/
 				/*	  Portfolio Item	/*------------------------------------------*/
@@ -3430,7 +3439,7 @@
 		#IIT-signUpForm input,
 		#IIT-signUpForm select {
 			margin: 2px 0;
-			pading 1px 0;
+			padding: 1px 0;
 		}
 
 		#IIT-signUpForm input[type="radio"] {
@@ -3555,7 +3564,7 @@
 				<div class="col-md-6 col-md-offset-3 text-center">
 					<div id="form">
 						<form id="IIT-signUpForm" class="IIT-signUpForm" action="#" dir="ltr"
-							onsubmit="return handleSubmit(event)"> <input type="hidden" name="__profileid"
+							onsubmit="handleSubmit(event)"> <input type="hidden" name="__profileid"
 								value="c66b17f7-7eb9-4274-aba6-bba85ff8a704"> <input type="hidden" name="__formversion"
 								value="0"> <input type="hidden" name="__language" value="es"> <input type="hidden"
 								name="__callback" value="IitSignUpFormhandleResponse">
@@ -3574,7 +3583,7 @@
 		</section> <!-- SERVICES			============================================= -->
 		
 		<!-- STATISTIC BANNER			============================================= -->
-		<div id="statistic_banner" style="background-image: url(&#x27;images/statistic-banner.jpg&#x27;)">
+		<div id="statistic_banner" >
 			<div class="container">
 				<!-- SECTION TITLE -->
 				<div class="row">
@@ -3649,7 +3658,7 @@
 								<p>&gt; Desarrollamos soluciones de inversión a medida de cada uno de nuestros clientes
 								</p> <!-- Tab #2 Buttons --> <a
 									href="https://www.portfoliopersonal.com/Pilares/Tecnologia"
-									class="btn btn-theme animated" data-animation="bounceIn"
+									class="btn btn-theme animated btnasesorta-animation="bounceIn"
 									data-animation-delay="300">Conocé mas</a>
 							</div> <!-- END TAB #2 -->
 						</div> <!-- End Tab Panes -->
@@ -3943,7 +3952,7 @@
 					<div class="col-md-12 text-center">
 						<h2>¡Contactá un asesor!</h2>
 						<p>Disfrutá de la experiencia de invertir con Loopbit</p> <a
-							href="https://cuenta.portfoliopersonal.com/abrirCuenta" class="btn btnasesor">Abrir cuenta
+							href="https://cuenta.portfoliopersonal.com/abrirCuenta" class="btnasesor">Abrir cuenta
 							de Inversiones</a> <!-- <a href="#" class="btn btn-theme">Discover More</a>	 -->
 					</div>
 				</div> <!-- End row -->
